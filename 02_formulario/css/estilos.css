@@ -1,0 +1,60 @@
+
+header{
+	font-family: Arial;
+	font-size: 3em;
+	font-weight: 700;
+	margin: 30px 0 20px 0;
+}
+
+#contenedor{
+	border: 2px #000 solid;
+	padding:50px;
+}
+
+input.data{
+	border: 2px #000 solid;
+	width: 250px;
+	height: 30px;
+	font-size: 1em;
+	margin-bottom: 5px;
+}
+
+input.red{
+	float:left;
+	color: #000;
+	line-height: 20px;
+}
+
+p.gen{
+	float:left;
+	font-family: Arial;
+	margin: 0 20px 0 5px;
+}
+
+#nacionalidad{
+	margin: 30px 0px;
+}
+
+select {
+	width: 250px;
+    border: 2px #000 solid;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+input.submit{
+	width: 120px;
+	padding: 10px 0px;
+	margin-right: 20px;
+	background-color: #bbb;
+	font-size: 14px;
+	color: #000;
+	border: 2px #000 solid;
+}
+
+
+
+
+
+.clear{
+	clear:both;}

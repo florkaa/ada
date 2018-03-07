@@ -5,5 +5,45 @@
 		<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	</head>
 	<body>
+		<header>Untitled Page</header> 
+
+		<div id="contenedor">
+			<form id="datos">
+				<p> Nombre:</p> <input class="data" type="text" name="Nombre"> <br>
+				<p>Apellido: </p> <input class="data" type="text" name="Apellido"><br>
+				<p>Email</p> <input class="data" type="text" name="Email"><br>
+			</form>
+
+			<form id="genero">
+				<p>Género</p>
+				<input class="red" type="radio" name="genero" value="femenino"> <p class="gen">Femenino</p>
+				<input class="red" type="radio" name="genero" value="masculino"> <p class="gen">Masculino</p>
+			</form>
+
+			<div class="clear"></div>
+
+			<form id="nacionalidad">
+				<p>Nacionalidad</p>
+				<select name="cars" >
+				  <option class="nac" value="argentina">Argentina</option>
+				  <option value="bolivia">Bolivia</option>
+				  <option value="brasil">Brasil</option>
+				  <option value="chile">Chile</option>
+				</select>
+			</form>
+
+				<p>Temas que le interesan</p>
+				<form action="/action_page.php" method="get">
+				  <input type="checkbox" name="interest" value="Infraestructura"> Infraestructura<br>
+				  <input type="checkbox" name="interest" value="prog web"> Programación web<br>
+				  <input type="checkbox" name="interest" value="prog mob"> Programación Mobile<br><br>
+				</form>
+
+				<input type="checkbox" name="terminos" value="terminos"> Acepta los términos y condiciones.<br><br><br>
+
+			<input class="submit" type="submit" name="cancelar" value="Cancelar">
+			<input class="submit" type="submit" name="aceptar" value="Aceptar">
+		</div>
+
 	</body>
-</html>s
+</html>
