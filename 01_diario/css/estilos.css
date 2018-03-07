@@ -1,0 +1,75 @@
+body{
+	margin: auto;
+	font-family: Georgia,"serif";
+	width: 90%;
+}
+
+#nav{
+	font-size: 1em;
+	color: #000;
+	margin-top: 20px;
+	padding-left: 130px;
+}
+
+#nav a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #3d8ef7;
+	font-size: 1em;
+}
+
+#title{
+	    padding-left: 130px;
+}
+
+h1{
+	font-size: 2.5em;
+	font-family: 'Roboto Slab', serif;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.imagen{
+	padding-bottom: 35px;
+	width: 100%;
+}
+
+#contenido {
+	width: 60%;
+	margin: 0px 0px 20px 20px;
+	text-align: justify;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.fecha{
+	font-family: Arial;
+	font-size: 0.8em;
+	color: #868686;
+}
+
+.piefoto{
+	font-family: Arial;
+    font-size: 16px;
+    margin: 0;
+    max-width: 70%;
+    margin-left: 20px;
+    padding: 0;
+}
+
+#piefoto2{
+	max-width:100%;
+	margin-left:0px;
+}
+
+p{
+	padding: 10px 0px;
+	line-height: 1.3em;
+}
+
+p#capital::first-letter { 
+	font: 700 78px/80px Arial;
+    float: left;
+    margin-right: 12px;
+    color: #000;
+}
