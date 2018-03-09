@@ -7,7 +7,6 @@ header{
 }
 
 #contenedor{
-	border: 2px #000 solid;
 	padding:50px;
 }
 
@@ -37,6 +36,7 @@ p.gen{
 
 select {
 	width: 250px;
+	height: 30px;
     border: 2px #000 solid;
     background-color: #fff;
     font-size: 14px;
@@ -51,10 +51,6 @@ input.submit{
 	color: #000;
 	border: 2px #000 solid;
 }
-
-
-
-
 
 .clear{
 	clear:both;}
