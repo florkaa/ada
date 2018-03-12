@@ -1,0 +1,57 @@
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+body{
+	margin: auto;
+}
+
+#container{
+	width: 80%;
+	margin: auto;
+}
+
+#logo{
+	width: 100%;
+	background-color: #c1c1c1;
+	padding: 40px;
+}
+
+nav{
+	width: 100%;
+	background-color: #c1c1c1;
+	margin: 10px 0px;
+	padding: 20px;
+}
+
+header{
+	width: 100%;
+	background-color: #c1c1c1;
+	padding: 100px;
+}
+
+article{
+	background-color: #c1c1c1;
+	padding: 200px;
+	margin: 30px 0px;
+}
+
+article.side{
+	width: 37%;
+	float: left;
+}
+
+article.bodyarea{
+	width: 60%;
+	float:right;
+}
+
+.clear{
+	clear: both;
+}
+
+footer{
+	width: 100%;
+	background-color: #c1c1c1;
+	padding: 20px;
+}
