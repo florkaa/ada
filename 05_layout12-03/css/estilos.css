@@ -10,8 +10,10 @@ body{
 	width: 80%;
 	margin: auto;
 }
-
-#logo{
+header{
+	margin-bottom: 30px;
+}
+figure.logo{
 	width: 100%;
 	background-color: #c1c1c1;
 	padding: 40px;
@@ -24,7 +26,7 @@ nav{
 	padding: 20px;
 }
 
-header{
+.banner{
 	width: 100%;
 	background-color: #c1c1c1;
 	padding: 100px;
@@ -33,7 +35,7 @@ header{
 article{
 	background-color: #c1c1c1;
 	padding: 200px;
-	margin: 30px 0px;
+	margin-bottom: 30px;
 }
 
 article.side{
