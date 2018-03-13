@@ -11,8 +11,11 @@ body{
 	margin: auto;
 	margin-top: 45px;
 	width: 95%;
-	height: 440px;
 	background-color: #c1c1c1;
+}
+
+#container img{
+	width: 100%;
 }
 
 .contacto{

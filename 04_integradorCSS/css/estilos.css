@@ -23,17 +23,24 @@ img.flag{
 	box-shadow: 2px 2px 4px #e8e8e8;
 	position: absolute;
 	top: 186px;
-    left: 700px;
+    left: 54%;
 }
 
 h1{
 	font-family: 'Roboto Slab', serif;
 	font-size: 1.6em;
+	color: #8a1d1d;
+}
+
+h2{
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2em;
 }
 
 p{
 	text-align: center;
 	margin: 30px 0px;
+	line-height: 20px;
 }
 
 .redes img{
