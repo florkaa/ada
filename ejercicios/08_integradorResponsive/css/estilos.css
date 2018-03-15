@@ -1,0 +1,71 @@
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+body{
+	margin: auto;
+	width: 100%;
+	font-family: 'Verdana', serif;
+}
+header{
+	width: 80%;
+	margin: auto;
+}
+nav a{
+	text-decoration: none;
+	line-height: 50px;
+	color: #c7a6a6;
+	margin: 10px;
+	font-size: 0.8em;
+	font-weight: 300;
+}
+header img{
+	width: 50px;
+	position: absolute;
+	top:0;
+	right: 0;
+}
+#container{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+.producto{
+	width: 200px;
+	display: inline-block;
+	margin: 20px;
+}
+.producto img{
+	height: 200px;
+}
+
+.producto p{
+	line-height: 2.5em;
+	background-color: #c7a6a6;
+    color: #fff;
+}
+
+.clear{
+	clear: both;
+}
+
+
+
+@media all and (max-width: 480px){
+	header{
+		width: 100%;
+	}
+	#container{
+		width: 180px;
+		margin: auto;
+	}
+	.producto{
+		width: 100%;
+		display: block;
+		margin: 10px 0px;
+	}
+	.producto img{
+		height: 180px;
+	}
+
+}
