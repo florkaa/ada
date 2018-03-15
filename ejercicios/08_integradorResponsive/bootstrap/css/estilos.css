@@ -1,0 +1,46 @@
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	margin: auto;
+}
+
+#container{
+	width: 90%;
+	margin: auto;
+}
+
+nav{
+	line-height: 50px;
+}
+
+nav a{
+	color:#a03c3c;
+	font-size: 1.1em;
+}
+
+span{
+	margin: 0px 10px;
+}
+
+.carteras{
+	width: 90%;
+	margin: auto;
+}
+
+.producto{
+	margin-top:40px;
+}
+
+.producto img{
+	width: 100%;
+}
+
+.producto p{
+	font-size: 1.2em;
+	text-align: center;
+	line-height: 3em;
+}
