@@ -43,9 +43,7 @@ input {
 }
 
 .redes{
-	margin: auto;
-	width: 95%;
-	margin-bottom: 40px;
+	margin: 20px auto 40px auto;
 }
 
 .redes img{
@@ -67,4 +65,44 @@ footer{
 
 footer p{
 	text-align: center;
+}
+
+
+@media all and (max-width:665px){
+
+	.contacto p{
+		margin: auto;
+		display: block;
+	}
+
+	input {
+		margin: auto;
+		display: block;
+	}
+
+	.text{
+		margin: 10px auto;
+	}
+
+	.submit{
+		margin: auto;
+		display: block;
+	}
+
+	.redes{
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.redes img{
+		width: 20px;
+		float:none;
+	}
+	footer{
+		margin:auto;
+	}
+	footer p{
+		font-size: 0.8em;
+	}
+
 }
