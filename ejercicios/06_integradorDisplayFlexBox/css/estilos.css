@@ -97,3 +97,18 @@ p{
 .clear{
 	clear:both;
 }
+@media all and (max-width: 515px){
+	nav{
+		height: 70px;
+	}
+	.links{
+		line-height: 40px;
+		float: none;
+	}
+	form.search{
+		line-height: 20px;
+		float: none;
+		display: block;
+		text-align: center;
+	}
+}
