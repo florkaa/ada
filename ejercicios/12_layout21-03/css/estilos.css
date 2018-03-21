@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	margin: auto;
+}
+
+#contenedor{
+	width: 90%;
+	display: flex;
+	flex-wrap: row;
+	justify-content: center;
+}
+#left{
+	width: 25%;
+	padding:0 20px;
+	background-color: #fdfdfd;
+}
+#left img{
+	max-width: 250px;
+	margin:20px 0px;
+}
+#left p{
+	font-weight: 600;
+}
+.dropdown p{
+	display: inline-block;
+}
+label{
+	font-weight: 400;
+	padding-left: 10px;
+}
+form{
+	margin-left:40px;
+}
+.btn-default {
+    color: #333;
+    background-color: #fdfdfd;
+    border:none;
+    margin-left: 10px;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover{
+    color: #333;
+    background-color: #f7f7f7;
+    border: none;
+}
+
+span.pesos{
+	padding-right:10px;
+}
+#right{
+	width: 75%;
+	margin-top:10px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+.marca{
+    margin: 20px 0px;
+}
+.producto{
+	width: 30%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+.position{
+	position: relative;
+    top: 20px;
+    right: 100px;
+}
+.producto:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.producto .precio{
+	font-size: 1.3em;
+	color: #D1030F;
+}
