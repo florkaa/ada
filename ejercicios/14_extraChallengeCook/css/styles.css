@@ -291,20 +291,20 @@ p.title{
 }
 #bottom{
 	display: none;
-	width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
 }
 #bottom a{
 	color:#fff;
 }
-
+.derechos{
+	display: none;
+	border-top: 1px #babfc3 solid;
+	margin-top:-30px;
+}
 .derechos p{
 	color:#babfc3;
 	text-align: center;
 	font-size: 11px;
-	border-top: 1px #babfc3 solid;
+	margin-top:20px;
 }
 
 /* ESTILOS ENTRY*/
@@ -401,7 +401,6 @@ ul.recipe li p{
 }
 
 
-
 @media (min-width: 767px) and (max-width: 990px) {
 	.hovereffect img{
 		display: none;
@@ -422,6 +421,15 @@ ul.recipe li p{
 	}
 	.mainEntry {
     	width: 90%;
+	}
+	#bottom{
+		width: 100%;
+	    display: flex;
+	    flex-flow: row wrap;
+	    justify-content: center;
+	}
+	.derechos{
+		display: block;
 	}
 }
 
@@ -504,5 +512,17 @@ ul.recipe li p{
 	}
 	.mainEntry {
     	width: 90%;
+	}
+	.entrada .info .boton{
+		margin:auto;
+	}
+	#bottom{
+		width: 100%;
+	    display: flex;
+	    flex-flow: row wrap;
+	    justify-content: center;
+	}
+	.derechos{
+		display: block;
 	}
 }
