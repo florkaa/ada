@@ -1,0 +1,42 @@
+.circulo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  margin: auto;
+}
+#container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.blue {
+  background-color: #3c71cb;
+}
+.blue:hover {
+  background-color: #8dace0;
+}
+.green {
+  background-color: #78bf38;
+}
+.green:hover {
+  background-color: #77d81f;
+}
+.red {
+  background-color: #a92d1d;
+}
+.red:hover {
+  background-color: rgba(169, 45, 29, 0.5);
+}

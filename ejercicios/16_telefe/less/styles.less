@@ -1,0 +1,40 @@
+.circulo{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	margin: auto;
+}
+#container{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.circle{
+	.circulo;
+	margin:20px;
+}
+.blue{
+	background-color: #3c71cb;
+	&:hover{
+		background-color:lighten(#3c71cb, 20%);
+	}
+}
+.green{
+	background-color: #78bf38;
+	&:hover{
+		background-color:saturate(#78bf38, 20%);
+	}
+}
+.red{
+	background-color: #a92d1d;
+	&:hover{
+		background-color:fadeout(#a92d1d, 50%);
+	}
+}

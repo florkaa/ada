@@ -1,4 +1,4 @@
-@ancho: 800px;
+@width: 800px;
 @height: 200px;
 @background: #eaaeae;
 @separate: 10px;
@@ -12,16 +12,16 @@ body{
 	margin: auto;
 }
 #contenedor{
-	width: @ancho;
+	width: @width;
 	margin: @separate auto;
 }
 .first{
-	width: @ancho;
+	width: @width;
 	height: @height;
 	padding: @separate;
 	background-color: @background;
 	.box{
-		width: @ancho / 2 - 15px;
+		width: @width / 2 - 15px;
 		text-align: center;
 		height: @height - 20px;
 	}
@@ -43,7 +43,7 @@ body{
 .out{
 	margin: @separate 0;
 	background-color: @background;
-	width: @ancho / 2 - 5px;
+	width: @width / 2 - 5px;
 	height: @height;
 	float: left;
 }
@@ -52,23 +52,23 @@ body{
 }
 footer{
 	background-color: @background;
-	width: @ancho;
-	height: @height / 2;
+	width: @width;
+	padding: @separate;
 }
 .clear{
 	clear:both;
 }
 
 @media all and (max-width: 799px){
-	@anchoMobile: 90%;
+	@widthMobile: 90%;
 	#contenedor{
-		width: @anchoMobile;
+		width: @widthMobile;
 		display: flex;
 	    flex-flow: row wrap;
 	    justify-content: center;
 	}
 	.first{
-		width: @anchoMobile;
+		width: @widthMobile;
 		height: @height * 2 - 10px;
 			.box{
 				width: 100%;
@@ -83,7 +83,7 @@ footer{
 	}
 	.out{
 		margin: @separate 0;
-		width: @anchoMobile;
+		width: @widthMobile;
 		clear: both;
 	}
 	.right{
@@ -91,6 +91,6 @@ footer{
 		margin-top: 0;
 	}
 	footer{
-		width: @anchoMobile;
+		width: @widthMobile;
 	}
 }

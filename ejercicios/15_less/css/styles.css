@@ -48,7 +48,7 @@ body {
 footer {
   background-color: #eaaeae;
   width: 800px;
-  height: 100px;
+  padding: 10px;
 }
 .clear {
   clear: both;
