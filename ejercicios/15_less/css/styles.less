@@ -1,0 +1,96 @@
+@ancho: 800px;
+@height: 200px;
+@background: #eaaeae;
+@separate: 10px;
+
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	margin: auto;
+}
+#contenedor{
+	width: @ancho;
+	margin: @separate auto;
+}
+.first{
+	width: @ancho;
+	height: @height;
+	padding: @separate;
+	background-color: @background;
+	.box{
+		width: @ancho / 2 - 15px;
+		text-align: center;
+		height: @height - 20px;
+	}
+	.uno{
+		float: left;
+		background-color: peru;
+		&:hover{
+			background-color: plum;
+		}
+	}
+	.dos{
+		float: right;
+		background-color: yellow;
+		&:hover{
+			background-color: green;
+		}
+	}
+}
+.out{
+	margin: @separate 0;
+	background-color: @background;
+	width: @ancho / 2 - 5px;
+	height: @height;
+	float: left;
+}
+.right{
+	margin-left: @separate;
+}
+footer{
+	background-color: @background;
+	width: @ancho;
+	height: @height / 2;
+}
+.clear{
+	clear:both;
+}
+
+@media all and (max-width: 799px){
+	@anchoMobile: 90%;
+	#contenedor{
+		width: @anchoMobile;
+		display: flex;
+	    flex-flow: row wrap;
+	    justify-content: center;
+	}
+	.first{
+		width: @anchoMobile;
+		height: @height * 2 - 10px;
+			.box{
+				width: 100%;
+			}
+			.uno{
+				clear: both;
+			}
+			.dos{
+				clear: both;
+				margin-top: @separate;
+			}
+	}
+	.out{
+		margin: @separate 0;
+		width: @anchoMobile;
+		clear: both;
+	}
+	.right{
+		margin-left: 0;
+		margin-top: 0;
+	}
+	footer{
+		width: @anchoMobile;
+	}
+}
