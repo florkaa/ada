@@ -11,17 +11,17 @@ premium, la relación pesos puntos será 1 a 5. */
 var producto = 1200;
 var puntos=600;
 var pesos = 0;
-var categoria="premium";
+var premium=true;
 
-if(producto==puntos){
+if(producto<=puntos){
 	console.log("tiene puntos suficientes para el canje");
 }else if(puntos==producto/2){
 	var x=producto-puntos;
-	if(categoria=="premium"){
-	var pesos=x/5;
+	if(premium==true){
+	pesos=x/5;
 	producto = producto/2 + pesos;	
 	}else{
-	var pesos=x/3;
+	pesos=x/3;
 	producto = producto/2 + pesos;
 	} 
 	console.log("agregará $"+pesos+" para comprar "+x+

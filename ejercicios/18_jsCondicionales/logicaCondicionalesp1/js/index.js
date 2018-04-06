@@ -75,12 +75,13 @@ z = 2;
 q = 0;
 
 if(x > y){
-	q = (x-z);
-}if(x-z > y){
+	q = x-z;
+	if(q>y){
+		console.log("q es mayor que y");
+	}else{
 	q = (x + z) * y;
+	console.log("q es igual a" + q);
 }
-
-console.log("numero " + q);
 
 
 /* 7- Que calcule el sueldo que le corresponde al trabajador 
