@@ -13,24 +13,14 @@ x = 14;
 /* 2- Dada una variable y que puede contener un número de 1 a 7, 
 determinar a que día de la semana corresponde. 
 Incluir la opción si la variable toma un valor no válido (por ejemplo 0 u 8).*/
-x = 8;
 
-if(x==1){
-	console.log("lunes");
-}else if(x==2){
-	console.log("martes");	
-}else if(x==3){
-	console.log("miércoles");	
-}else if(x==4){
-	console.log("jueves");	
-}else if(x==5){
-	console.log("viernes");	
-}else if(x==6){
-	console.log("sábado");	
-}else if(x==7){
-	console.log("domingo");	
+var semana=["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo", "inválido"];
+var dia="martes";
+
+if(semana.indexOf(dia)==-1){
+	console.log("ese día no existe");
 }else{
-	console.log("no es válido");
+	console.log("El día es "+semana[semana.indexOf(dia)])
 }
 
 /* 3- Dada una variable donde se ingresa el nombre del mes, 
@@ -58,12 +48,16 @@ if(x>0){
 }
 
 /* 5- Dada una variable que puede ser una letra, determinar si es una vocal. */
-x = "e"
-z = "e";
-if (z == x){
-	console.log("es vocal")
+
+var vocales = ["a","e","i","o","u"];
+var x = "a";
+var i;
+var es=vocales.indexOf(x);
+
+if(es!=-1){
+	console.log("es vocal");
 }else{
-	console.log("no lo es")
+	console.log("no es vocal");
 }
 
 /* 6- Dados tres números, x y z, si x es mayor que y calcular 
@@ -81,8 +75,8 @@ if(x > y){
 	}else{
 	q = (x + z) * y;
 	console.log("q es igual a" + q);
+	}
 }
-
 
 /* 7- Que calcule el sueldo que le corresponde al trabajador 
 de una empresa que cobra 40.000 euros anuales, 
@@ -106,3 +100,4 @@ if(antiguedad > 10){
 }
 
 console.log("Su nuevo sueldo es de €"+aumento+" anuales");
+

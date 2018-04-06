@@ -25,34 +25,55 @@ for(i=0;i<n;i++){
 	}
 }
 
-/* Ejercicio 3 - Dado el siguiente arreglo de números x = [10,24,36,7,98,11,14,20], 
-mostrar por pantalla el valor máximo. */
-
-var x = [10,24,36,7,98,11,14,20];
-var maximo=0;
-
-
-for(var i=0,len=x.length;i<len;i++){
-    if(maximo < x[i]){
-        maximo = x[i];
-    }
-}
-console.log(maximo);
-
-
-/* Ejercicio 4 - Dado el arreglo de números del punto 3, 
+/*  Ejercicio 3 - Dado el siguiente arreglo de números x = [10,24,36,7,98,11,14,20], 
+mostrar por pantalla el valor máximo. 
+	Ejercicio 4 - Dado el arreglo de números del punto 3, 
 mostrar por pantalla el valor máximo y su posición.*/
+
+var array = [10,24,36,7,98,11,14,20];
+var maximo = array[0];
+var posicion = 0;
+
+for (x = 1; x < array.length; x++){
+	if (array[x]>maximo){
+		maximo = array[x];
+		posicion = x;
+	}
+}
+console.log("el número máximo es: "+maximo+" y su posición es: "+posicion);
 
 
 /* Ejercicio 5 - Dado el siguiente arreglo de números x = [10,24,36,7,98,11,14,20,98,14,10], 
 mostrar por pantalla el valor máximo y la cantidad de veces que se repite.*/
 
-var x = [10,24,36,7,98,11,14,20,98,14,10];
+var array = [10,24,36,7,98,11,14,20,98,14,10];
+var maximo = array[0];
+var i = 0;
+var counter = 0;
 
-x = Math.max.apply(null,x); 
-console.log(x);
+for (i=0; i < array.length; i++){
+	if (array[i]>maximo){
+		maximo = array[i];
+		counter=1;
+		if(array[i]==maximo){
+			counter++;
+		}
+	}
+}
+//while (i != -1){
+//	var i = array.indexOf(repe,i);
+//	if (i != -1){
+//		i++;
+//		counter++;
+//	}
+//}
+console.log("el número máximo es: "+maximo+" y se repite: "+counter+" veces.");
 
 
+
+
+// x = Math.max.apply(null,x); 
+// console.log(x);
 
 /* Ejercicio 6 – Dados los siguientes arreglos:
 X = [“a”,”l”,”f”,”a”];
@@ -76,7 +97,6 @@ if(x[i]>y[i]){
 	console.log("y es mas largo");
 }
 
-
 /* Ejercicio 7 – Dado el siguiente array datos1 = [“Fido”,”Gomez”,26,15000.78,true] 
 y datos2 = [“Gervasio”,”Fernandez”,32,28.550,false]
 Determinar:
@@ -99,6 +119,32 @@ if(datos1[4]==true){
 	console.log("quien está casado es "+datos2[0]);
 }
 if(datos1[3]){
-	datos1[3]=datos1[3] + (datos2[3]*0.15);
+	datos1[3]=datos1[3] + (datos2[3]*0.125);
 	console.log("el nuevo sueldo de Fido es de "+datos1[3])
 }
+
+
+
+//Encontrar si está Lalo en el array.
+
+var nombres=["Pepe", "Lalo", "Euclides"];
+var x="Lalo";
+var i=0;
+var esta = false;
+
+while(esta==false && i<nombres.length){
+	if(nombres[i]==x);{
+		esta=true;
+	}
+	i++
+}
+if(esta){
+	console.log(x+" está");
+}
+
+var esta=nombres.indexOf(x);
+
+if(esta!=-1){
+	console.log("está");
+}
+

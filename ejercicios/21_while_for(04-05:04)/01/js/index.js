@@ -64,3 +64,24 @@ cont | Logueado |  u&p | salida
   1		  F 		V 		Bienvenido
   1		  V 		X		X     - ENTRÁS.
  */
+
+
+/* Función login */
+
+//Devuelva true en caso de logueo correcto y false en caso contrario
+
+function login(usuario, password){
+	if(usuario=="Pepe" && password==1234){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+if(login("fido",1234)){
+	console.log("Bievenido");
+}else{	
+	console.log("Error");
+}
+
+
