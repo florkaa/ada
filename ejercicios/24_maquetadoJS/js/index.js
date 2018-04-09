@@ -29,7 +29,39 @@ eachPost.appendChild(postPic);
 	text = document.createElement("div"); //div derecho
 	text.className="text";
 		h3 = document.createElement("h3"); //crear h3
-		var titulo = document.createTextNode("Buenos Aires, Argentina.");
+		var titulo = document.createTextNode("something");
+		h3.appendChild(titulo);
+	text.appendChild(h3);
+
+		parrafo = document.createElement("p"); //crear párrafo
+		var textoPost = document.createTextNode("lkadmngla");
+		parrafo.appendChild(textoPost);
+	text.appendChild(parrafo);
+		parrafo = document.createElement("p"); // otro párrafo
+		var textoPost = document.createTextNode("adkngk.");
+		parrafo.appendChild(textoPost);
+	text.appendChild(parrafo);
+eachPost.appendChild(text);
+
+document.getElementById("posts").appendChild(eachPost);
+
+
+
+
+var eachPost = document.createElement("div");
+eachPost.className="eachPost";
+
+	postPic = document.createElement("div"); //div izquierdo
+	postPic.className="postPic";
+eachPost.appendChild(postPic);
+	var img = document.createElement("img"); //imagen posts
+	img.src = 'img/florka.jpg';
+	postPic.appendChild(img);
+
+	text = document.createElement("div"); //div derecho
+	text.className="text";
+		h3 = document.createElement("h3"); //crear h3
+		var titulo = document.createTextNode("something");
 		h3.appendChild(titulo);
 	text.appendChild(h3);
 
