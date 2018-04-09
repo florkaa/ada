@@ -1,0 +1,108 @@
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	margin: auto;
+}
+#container{
+	width: 70%;
+	margin: 30px auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.profile{
+	width: 30%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+img {
+	border: 1px #dedede solid;
+}
+.picture{
+	width: 100%;
+}
+.picture img{
+	width: 100%;
+	padding: 5px;
+}
+#bio{
+	width: 100%;
+	margin:20px 0;
+}
+#friends{
+	text-align: right;
+}
+#friends .images{
+	width: 100%;
+	display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.images img{
+	width: 30%;
+	padding: 2px;
+	margin:5px 0;
+}
+#friends a{
+	text-decoration: none;
+	font-weight: 600;
+	color:#000;
+	font-size: 12px;
+}
+.wall{
+	width: 65%;
+}
+#posts, #sendPost{
+	width: 100%;
+}
+
+.eachPost{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	margin-bottom:30px;
+}
+.postPic{
+	width: 20%;
+}
+.postPic img{
+	width: 100%;
+	padding: 2px;
+}
+.text{
+	width: 80%;
+	margin-left: 20px;
+}
+.text h3{
+	border-bottom: 1px #dedede solid;
+	margin-bottom: 10px;
+}
+.text p{
+	margin:5px 0;
+}
+#sendPost{
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin-top:20px;
+}
+.postText, .postSend{
+	border: 1px #dedede solid;
+    border-radius: 5px;
+}
+.postText{
+	width: 89%;
+	height: 90px;
+}
+.postSend{
+	width: 10%;
+}
+
