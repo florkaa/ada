@@ -19,9 +19,6 @@ body {
   width: 70%;
   margin: 30px auto;
   display: flex;
-  align-items: center;
-  flex-flow: row wrap;
-  justify-content: space-between;
 }
 .profile {
   width: 30%;
@@ -83,7 +80,7 @@ form {
   margin: auto;
 }
 #posts {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 #posts .eachPost {
   display: flex;
@@ -122,8 +119,11 @@ form {
 }
 .postText {
   width: 85%;
-  height: 90px;
+  height: 70px;
   padding: 10px;
+}
+textarea {
+  resize: none;
 }
 .postSend {
   width: 50px;

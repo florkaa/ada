@@ -83,14 +83,14 @@ function cargarMuro(posts){
 
 		text = document.createElement("div"); //div derecho
 		text.className="text";/*
-			h3 = document.createElement("h3"); //crear h3
+			h3 = document.createElement("h3"); // h3
 			h3.textContent=posts[i][1];
 		text.appendChild(h3);
-			parrafo = document.createElement("p"); //crear párrafo
+			parrafo = document.createElement("p"); // párrafo
 			parrafo.textContent=posts[i][2];
 		text.appendChild(parrafo);*/
 
-			parrafo = document.createElement("p"); // otro párrafo
+			parrafo = document.createElement("p"); // párrafo
 			parrafo.textContent=posts[i];
 		text.appendChild(parrafo);
 
@@ -108,8 +108,6 @@ cargarMuro(posts);
  * parámetro lista | array, padre | nodo HTML.
  * void
 */
-
-
 
 function cargarListaImagenes(lista,padre){
 
@@ -139,15 +137,16 @@ function publicar(){
 	posts.push(texto);
 
 	cargarMuro(posts);
+
+	document.getElementById("entrada").value = "";
 }
 	
 var btnEnviar = document.getElementById('enviar');
 btnEnviar.addEventListener('click',publicar);
 
 
-
 /*
-	Formulario hecho con js.
+	Formulario hecho con js:
 
 var postText = document.createElement("input");
 	postText.className="postText";
