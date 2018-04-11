@@ -85,17 +85,67 @@ Crear un bloque de código que permita determinar si:
 
 var x = ["a","l","f","a"];
 var y = ["a","l","f","a","j","o","r"];
-
 if(x==y){
 	console.log("son iguales");
 }else{
 	console.log("no son iguales");
 }
-if(x[i]>y[i]){
+if(x.length>y.length){
 	console.log("x es mas largo");
 }else{
 	console.log("y es mas largo");
 }
+
+// FUNCIÓN
+
+function compararArrays (x,y){
+	var letras;
+	if(x.length==y.length){
+		for(var i=0; x.length;i++){
+			if(x[i]!=y[i]){
+				letras=letrasEnComun(x,y);
+				return "no son iguales, tiene: "+letras+" en común";
+			}
+		}
+		return "son iguales";
+	}else{
+		if(x.length>y.length){
+			letras=letrasEnComun(x,y);
+			return "x es mayor que y, tiene: "+letras+" en común";
+		}else{
+			letras=letrasEnComun(x,y);
+			return "y es mayor que x, tiene: "+letras+" en común";
+		}
+	}
+}
+
+function letrasEnComun (x,y){
+	var i, j;
+	var k=0;
+	var z=[];
+	var booleano = false;
+
+	for(i=0;i<x.length;i++){
+		for(j=0;j<y.length;j++){
+			if(x[i]==y[j]){
+				booleano = true;
+			}
+		}
+		if(booleano){
+			if(z.indexOf(x[i])==-1){
+				z[k] = x[i];
+				k++;
+			}
+			booleano = false;
+		}
+	}
+	return k;
+}
+
+console.log(compararArrays(x,y));
+
+// indexOf le pasas un parámetro y busca un i dentro del array, si no lo encuentra devuelve -1.
+
 
 /* Ejercicio 7 – Dado el siguiente array datos1 = [“Fido”,”Gomez”,26,15000.78,true] 
 y datos2 = [“Gervasio”,”Fernandez”,32,28.550,false]

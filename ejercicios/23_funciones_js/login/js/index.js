@@ -63,7 +63,35 @@ function login(usuario, password){
 
 login("Pepe",1234);
 
-
-
-
 // crear un array para usuario y otro para passwords //
+
+
+
+
+
+
+
+// Validación de mayoría de edad.
+
+
+
+function validarEdad(x){
+	var edad = parseInt(x); //convierte el string en un número entero. Devuelve el número o devuelve NaN.
+	if(!isNaN(edad)){
+		if(edad>=18){
+			return true;
+		}else{
+			return false;
+		}
+	}else{
+		return "error";
+	}
+}
+
+function isNaN(edad){
+	if(edad==NaN){
+		return true;
+	}else{
+		return false;
+	}
+}

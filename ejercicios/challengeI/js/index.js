@@ -7,8 +7,8 @@ for(var i = 0; i < plato.length; i++) {
 }
 
 var select = document.getElementById("guarnicion"); 
-var guarnicion = ["Ensalada mixta","Papas fritas","Pure de zapallo"];
-select.innerHTML = "";+
+var guarnicion = ["Ensalada mixta", "Papas fritas", "Puré de zapallo"]; 
+select.innerHTML = "";
 for(var i = 0; i < guarnicion.length; i++) {
     var opt = guarnicion[i];
     select.innerHTML += "<option value=\"" + opt + "\">" + opt + "</option>";

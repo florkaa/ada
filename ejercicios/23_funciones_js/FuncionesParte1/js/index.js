@@ -12,13 +12,53 @@ console.log(resultado);
 
 /* Ejercicio 2: Escribir una función que, dado un número pasado como parámetro, determine si es primo.*/
 
+function primo(x){
+	var num = 0;
+	var cont = 2;
+	var esPrimo=true;
+
+	while((cont>1 && cont<num) && esPrimo==true){
+		resto = num%cont;
+		if(resto==0){
+			esPrimo=false;
+		}
+		cont++
+	}
+	if(esPrimo==false){
+		console.log("no es primo");
+	}else{
+		console.log("es primo");
+	}
+}
+
+primo(21);
+
 
 /*  Ejercicio 3: Escribir una función que dada una palabra pasada 
 	por parámetro determine si es aguda, grave o esdrújula.*/
 
 
-
 /* Ejercicio 4: Escribir una función que dado un arreglo con los siguientes datos:*
 Corredor = { “Nombre”,”Apellido”,edad,”genero” } retorne la categoría a la cual estará anotado
 por ejemplo:
-F 18 – 25, M 18 – 25*/
+F 18 – 25, M 18 – 25 
+
+corredor = ["nombre","apellido","edad","género"]
+
+function (corredor){
+
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
