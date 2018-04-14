@@ -61,6 +61,7 @@ button{
 }
 #principalEleccion, #guarnicionEleccion, #postreEleccion{
 	margin:5px 0px;
+	width: 100%;
 }
 h1{
 	margin-bottom: 20px;
