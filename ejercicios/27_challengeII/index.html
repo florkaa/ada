@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>inscripción</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="main">
+		<h1>Formulario de inscripción</h1>
+		<form id="form" action="procesar.js" method="post">
+			<div class="box">
+				<label>Nombre</label>
+				<input type="text" class="large" autocomplete="given-name"> <span class="obli">*</span>
+			</div>
+			<div class="box">
+				<label>Apellido</label>
+				<input type="text" class="large" autocomplete="family-name"> <span class="obli">*</span>
+			</div>
+			<div class="box">
+				<label>Nacionalidad</label>
+				<select id="nacionalidad">
+					<option value="-1">Seleccione una nacionalidad</option>
+					<option>Argentina</option>
+					<option>Brasil</option>
+					<option>Bolivia</option>
+					<option>Uruguay</option>
+					<option>Paraguay</option>
+				</select> <span class="obli">*</span>
+			</div>
+			<div class="box">
+				<label>Fecha de Nacimiento</label>
+				<input type="date">
+			</div>
+			<div class="box">
+				<label>Tipo de Documento</label>
+				<select id="docType">
+					<option>DNI</option>
+					<option>LE</option>
+					<option>CE</option>
+				</select>
+				<label>Nº</label>
+				<input type="text"> <span class="obli">*</span>
+			</div>
+			<div class="box">
+				<label>Calle</label>
+				<input type="text" class="large">
+			</div>
+			<div class="box">
+				<label>Número</label>
+				<input type="text" class="small">
+				<label>Piso</label>
+				<input type="text" class="small">
+				<label>Depto</label>
+				<input type="text" class="small">
+			</div>
+			<div class="box">
+				<label>Provincia</label>
+				<select id="state">
+					<option value="-1">Seleccione una provincia</option>
+					<option>Buenos Aires</option>
+					<option>Santa Fé</option>
+					<option>Córdoba</option>
+				</select>
+				<span class="obli">*</span>
+			</div>
+			<div class="box">
+				<label>Ciudad</label>
+				<select id="city">
+					<option></option>
+				</select>
+				<span class="obli">*</span>
+			</div>
+			<div class="box">
+				<label>Género</label>
+				<input type="radio" name="genero" class="gen" value="femenino"> <span>Femenino</span>
+				<input type="radio" name="genero" class="gen" value="masculino"> <span>Masculino</span>
+				<input type="radio" name="genero" class="gen" value="otro"> <span>Otro</span> <span class="obli">*</span>
+			</div>
+			<div class="box">
+				<label>Deportes</label>
+				<input type="checkbox" class="check"><span>fútbol</span><br>
+				<input type="checkbox" class="check left"><span>handball</span><br>
+				<input type="checkbox" class="check left"><span>voley</span>
+			</div>
+			<div class="box">
+				<label>Altura</label>
+				<input type="text" class="small">
+				<label>Peso</label>
+				<input type="text" class="small">
+			</div>
+			<div class="box">	
+				<label>Teléfono</label>
+				<input type="text" class="large"> <span class="obli">*</span>
+			</div>
+			<div class="box">
+				<label>E-mail</label>
+				<input type="text" class="large" autocomplete="email"> <span class="obli">*</span>
+			</div>
+			<div class="box">
+				<label>Obsevaciones</label>
+				<textarea class="comment" placeholder="Escribe tu observación."></textarea>
+			</div>
+			<div class="box right">
+				<p class="obli"> * campos obligatorios.</p><br>
+				<input type="button" id="send" value="Enviar">
+				<input type="button" id="clean" value="Limpiar">
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" href="js/index.js"></script>
+</body>
+</html>

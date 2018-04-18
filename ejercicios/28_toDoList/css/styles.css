@@ -1,0 +1,43 @@
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%
+}
+
+#container{
+	width: 60%;
+	margin: auto;
+	padding: 40px 0;
+}
+
+#toDoList{
+	width: 50%;
+	margin: 20px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+textarea{
+	height: 50px;
+	margin-bottom: 10px;
+	resize: none;
+}
+
+#lista{
+	padding: 20px 0px;
+	width: 50%;
+	margin: auto;
+	border-top: 1px #000 dashed;
+	border-bottom: 1px #000 dashed;
+
+}
+span{
+	padding-left: 20px;
+}
+.task{
+	margin: 5px 0;
+}
