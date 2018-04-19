@@ -22,8 +22,16 @@ function cargarMuro(arrayPubli) {
       checkbox.className="check";
       var text = document.createElement("span");
       text.textContent = arrayPubli[i];
+      var rem = document.createElement("a");
+      rem.innerHTML='<i class="fas fa-trash can"></i>';
+      rem.className="borrar";
+      var edit = document.createElement("a");
+      edit.innerHTML = '<i class="fas fa-pencil-alt"></i>';
+      edit.className = 'edit';
       contenedor.appendChild(checkbox);
       contenedor.appendChild(text);
+      contenedor.appendChild(rem);
+      contenedor.appendChild(edit);
     }
     contenedorDiv.appendChild(contenedor);
   }
@@ -33,9 +41,37 @@ var btnPublicar = document.getElementById("add");
 btnPublicar.addEventListener("click", publicar);
 
 
-$('.check').on('click', function(event){
-  event.preventDefault();
- // idTarea = $(this).data('id'); // this el elemento en el que sucede el evento/en el que estás parado
-  $('.'.task).hide();
+$(document).ready(function() {
+  $('#add').on('click', function() {
+    $('a').on('click', function () {
+      event.preventDefault();
+    });
+    $('.borrar').on('click', function() {
+      $(this).parent('.task').remove();
+    });
+    $('.edit').on('click', function(){
+      // cargar input sobre el task y se edita.
+      
+    });
+  });
 });
 
+/*
+
+$('#add').on('click', function(event){
+  var text = $('#nueva').val();
+  arrayPubli.push(text);
+  var li = '<li id="'+arrayPubli.length+'">'+text+'<button class="borrar" data-accion="borrar" data-id="'+arrayPubli.length+'">X</button></li>';
+  $('#to-do').append(li);
+});
+
+$(document).on('click', 'ul button', function(){
+  var accion =$(this).data('accion');
+  if(accion=="borrar"){
+    $(this).parent('.task').remove();
+  }else{
+    var id = "$(this).data('id');
+  };
+});
+
+*/

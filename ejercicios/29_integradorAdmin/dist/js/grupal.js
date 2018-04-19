@@ -1,5 +1,4 @@
 var publicacion1 = "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market.";
-
 var posts = [publicacion1];
 var wallPost = document.getElementById("posts")
 
@@ -54,14 +53,35 @@ var btnEnviar = document.getElementById('enviar');
 btnEnviar.addEventListener('click',publicar);
 
 
-// event.preventDefault() para resetear sus eventos naturales, ejemplo: un link.
+function validateForm() {
+    var x = document.forms["myForm"]["emailto"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
 
-$('.borrar').on('click', function(event){
-	event.preventDefault();
-	idTarea = $(this).data('id'); // this el elemento en el que sucede el evento/en el que estás parado
-	$('#'.idTarea).hide();
+    var y = document.forms["myForm"]["subject"].value;
+    if (y == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    }
+}
+
+
+$(document).ready(function() {
+    var items = [];
+    $('#add').on('click', function() {
+        $('a').on('click', function () {
+            //evito el normal funcionamiento del evento, e intervengo con mi
+            //evento
+            event.preventDefault();
+            $(this).addClass('linea');
+        });
+        $('.borrar').on('click', function() {
+            // alert("Item borrado.");
+            $(this).parent('li').hide();
+            console.log($(this).parent());
+            //$(this).remove();
+        });
+    });
 });
-
-
-
-
