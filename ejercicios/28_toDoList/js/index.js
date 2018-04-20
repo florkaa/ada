@@ -22,6 +22,7 @@ function cargarMuro(arrayPubli) {
       checkbox.className="check";
       var text = document.createElement("span");
       text.textContent = arrayPubli[i];
+      text.className="text";
       var rem = document.createElement("a");
       rem.innerHTML='<i class="fas fa-trash can"></i>';
       rem.className="borrar";
@@ -41,27 +42,37 @@ var btnPublicar = document.getElementById("add");
 btnPublicar.addEventListener("click", publicar);
 
 
+
+
+var text = $('.text');
+var task = $('.task');
+
+
 $(document).ready(function() {
-  $('#add').on('click', function() {
-    $('a').on('click', function () {
-      event.preventDefault();
+    var editInput = $('<input type="text" class="editBox" value="'+$(".task").val(text)+'">');
+
+    $('#add').on('click', function() {
+        $('a').on('click', function () {
+            event.preventDefault();
+        });
+        $('.borrar').on('click', function() {
+            $(this).parent('.task').remove();
+        });
+        $('.edit').on('click', function(){
+          // cargar input sobre el task y se edita.
+            $(".text").replaceWith(editInput);
+        });    
     });
-    $('.borrar').on('click', function() {
-      $(this).parent('.task').remove();
-    });
-    $('.edit').on('click', function(){
-      // cargar input sobre el task y se edita.
-      
-    });
-  });
 });
 
 /*
 
+
 $('#add').on('click', function(event){
   var text = $('#nueva').val();
   arrayPubli.push(text);
-  var li = '<li id="'+arrayPubli.length+'">'+text+'<button class="borrar" data-accion="borrar" data-id="'+arrayPubli.length+'">X</button></li>';
+  var li = '<li id="'+arrayPubli.length+'">'+text+'<button class="borrar" data-accion="borrar" 
+  data-id="'+arrayPubli.length+'">X</button></li>';
   $('#to-do').append(li);
 });
 
