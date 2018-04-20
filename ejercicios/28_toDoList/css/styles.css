@@ -8,32 +8,44 @@ body{
 }
 
 #container{
-	width: 60%;
+	width: 30%;
 	margin: auto;
 	padding: 40px 0;
 }
 
 #toDoList{
-	width: 50%;
 	margin: 20px auto;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 }
 
 textarea{
-	height: 50px;
+	width: 95%;
+	height: 40px;
 	margin-bottom: 10px;
+	padding: 5px;
 	resize: none;
+	border: 1px #000 solid;
 }
 
+#add{
+	height: 40px;
+    background: #000;
+    font-size: 20px;
+    color:white;
+    border: none;
+}
+h2{
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: sans-serif;
+}
 #lista{
 	padding: 20px 0px;
-	width: 50%;
 	margin: auto;
 	border-top: 1px #000 dashed;
 	border-bottom: 1px #000 dashed;
-
 }
 span{
 	padding-left: 20px;
@@ -47,16 +59,23 @@ span{
     text-decoration: none;
     color: #000;
 }
-
-.svg-inline--fa.fa-w-14{    
+.svg-inline--fa.fa-trash.fa-w-14.can{    
 	width: 0.7em;
+	color:red;
+	margin-left: 5px;
 }
-
+.svg-inline--fa.fa-w-16{
+	width: 0.8em;
+	color: green;
+}
 .editBox{
 	margin-left: 5px;
     width: 75%;
 }
+.hide{
+	display: none;
+}
 
-
-
-
+input[type=checkbox]:checked + span.decor{
+  text-decoration: line-through;
+}

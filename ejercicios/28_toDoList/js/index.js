@@ -21,8 +21,10 @@ function cargarMuro(arrayPubli) {
       checkbox.setAttribute("type", "checkbox");
       checkbox.className="check";
       var text = document.createElement("span");
+      var editBox = document.createElement("input");
+      editBox.classList = "editBox hide";
       text.textContent = arrayPubli[i];
-      text.className="text";
+      text.className="text decor";
       var rem = document.createElement("a");
       rem.innerHTML='<i class="fas fa-trash can"></i>';
       rem.className="borrar";
@@ -31,6 +33,7 @@ function cargarMuro(arrayPubli) {
       edit.className = 'edit';
       contenedor.appendChild(checkbox);
       contenedor.appendChild(text);
+      contenedor.appendChild(editBox);
       contenedor.appendChild(rem);
       contenedor.appendChild(edit);
     }
@@ -49,8 +52,6 @@ var task = $('.task');
 
 
 $(document).ready(function() {
-    var editInput = $('<input type="text" class="editBox" value="'+$(".task").val(text)+'">');
-
     $('#add').on('click', function() {
         $('a').on('click', function () {
             event.preventDefault();
@@ -58,11 +59,37 @@ $(document).ready(function() {
         $('.borrar').on('click', function() {
             $(this).parent('.task').remove();
         });
-        $('.edit').on('click', function(){
-          // cargar input sobre el task y se edita.
-            $(".text").replaceWith(editInput);
-        });    
+    $(".edit").on("click", function() {
+      var currentValue = $(this)
+        .parent(".task")
+        .children("span")
+        .html(); 
+      $(this)
+        .parent(".task")
+        .children(".editBox")
+        .val(currentValue)
+        .removeClass("hide");
+      $(this)
+        .parent(".task")
+        .children(".text")
+        .addClass("hide");
+      $(".editBox").on("keypress", function(e) {
+        var inputValue = e.target.value;
+        if (e.keyCode == 13) { // 13 es el identificado del enter.
+          $(this)
+            .parent(".task")
+            .children(".text")
+            .html(inputValue) 
+            .removeClass("hide"); 
+
+          $(this) 
+            .parent(".task")
+            .children(".editBox")
+            .addClass("hide");
+        }
+      });
     });
+  });
 });
 
 /*
