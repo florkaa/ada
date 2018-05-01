@@ -1,0 +1,115 @@
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+	color: #000;
+}
+#container{
+	width: 100%;
+	margin: auto;
+}
+label{
+	font-weight: 600;
+}
+input, select, textarea{
+	margin: 0 20px;
+	padding: 5px;
+	border: 1px #000 solid;
+	resize: none;
+}
+.top{
+	display: flex;
+	background-color: #f7eef6;
+	justify-content: space-around;
+	align-items: center;
+	height: 50px;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+.link{
+	display: flex;
+	align-items: center;
+}
+.icon{
+	font-size: 30px;
+}
+form{
+	padding: 20px;
+}
+button{
+	padding: 5px;
+    background-color: white !important;
+    border: 1px #000 solid;
+}
+section{
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	width: 90%;
+}
+figure {
+	width: 200px;
+	margin: 20px;
+	padding: 10px;
+	background-color: #fdfcff;
+	border: 1px #efeaea dotted;
+}
+img{
+	width: 180px;
+	margin-top: 20px;
+}
+figure:hover{
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 16px 0 rgba(0, 0, 0, 0.02);
+}
+
+#containerIndex{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top:30px;
+}
+#cumple-hoy{
+	width: 50%;
+	padding: 20px;
+	text-align: center;
+	background-color: #f7eef6;
+	margin-bottom: 20px;
+}
+#listaCumples{
+	max-height: 100px;
+	text-align: center;
+}
+ul{
+	padding: 0;
+	list-style-type: none;
+}
+li{
+	display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+a{
+	margin-left: 10px;
+}
+a, p{
+	display: inline-block;
+}
+h1{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 2.5em;
+}
+h2{
+	font-variant: small-caps;
+	font-size: 2em;
+}
+.borrar{
+	color: #731f73;
+}
+.borrar:hover{
+	transform: scale(1.2);
+}
