@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	padding: 20px 0;
+
+}
+#container{
+	width: 80%;
+	margin:auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+	border: 10px #4e9c97 solid;
+}
+h1{
+	font-variant: small-caps;
+	margin: 20px 0;
+	font-size: 3em;
+}
+select{
+	font-size: 1.1em;
+	width: 120px;
+	background-color: #fff;
+}
+#cont{
+	font-size: 1.1em;
+	border: 1px #000 solid;
+    border-radius: 4px;
+    background-color: #000;
+    color: #fff;
+}
+.top{
+	margin: 10px 0;
+}
+
+.flowers{
+	margin: 20px;
+}
+img{
+	max-height: 233px;
+	border: 2px #4e9c97 solid;
+	padding: 5px;
+	border-radius: 25px;
+}
+.hide{
+	display: none;
+}
