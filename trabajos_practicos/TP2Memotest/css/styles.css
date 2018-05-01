@@ -54,6 +54,7 @@ p#nombre{
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
+	color: #fff;
 }
 #game img{
 	border: 1px #000 solid;
