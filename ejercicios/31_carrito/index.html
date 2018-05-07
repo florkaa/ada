@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>shop</title>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	</head>
+	<body>
+		<div class="container">
+			<header>	
+				<a href="index.html"><img src="products/logo_chanel.svg"></a>
+			</header>
+			<div class="alert hide">
+			  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+			  No hay suficiente stock.
+			</div>
+			<div class="alertGreen hide">
+			  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+			  El producto se ha agregado al carrito.
+			</div>
+			<div class="alertOrange hide">
+			  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+			  Indique una cantidad.
+			</div>
+			<div class="products-row">
+				<a href="carrito.html"><i class="fas fa-shopping-bag" id="carro"></i></a>
+				<div class="product">
+					<img src="products/b.jpg" class="imgProd">
+					<p class="descripcion" data-cod="001">Coco Crush Ring <span class="tipo">18k beige gold</span></p>
+					<span>$</span><p class="precio">2450</p>
+					<p class="stock hide">5</p>
+					<input type="number" name="cantidad" class="cantidad" required>
+					<button class="add">agregar</button>
+				</div>
+				<div class="product">
+					<img src="products/e.jpg" class="imgProd">
+					<p class="descripcion" data-cod="002">Coco Crush Ring <span class="tipo">18k white gold</span></p>
+					<span>$</span><p class="precio">2500</p>
+					<p class="stock hide">3</p>
+					<input type="number" name="cantidad" class="cantidad" required>
+					<button class="add">agregar</button>
+				</div>
+				<div class="product">
+					<img src="products/f.jpg" class="imgProd">
+					<p class="descripcion" data-cod="003">Coco Crush Ring<span class="tipo">18k yellow gold and diamonds</span></p>
+					<span>$</span><p class="precio">4400</p>
+					<p class="stock hide">7</p>
+					<input type="number" name="cantidad" class="cantidad">
+					<button class="add">agregar</button>
+				</div>
+				<div class="product">
+					<img src="products/g.jpg" class="imgProd">
+					<p class="descripcion"  data-cod="004">Coco Crush Ring<span class="tipo">18k white and yellow gold with diamonds</span></p>
+					<span>$</span><p class="precio">9800</p>
+					<p class="stock hide">3</p>
+					<input type="number" name="cantidad" class="cantidad">
+					<button class="add">agregar</button>
+				</div>
+				<div class="product">
+					<img src="products/i.jpg" class="imgProd">
+					<p class="descripcion" data-cod="005">Coco Crush Bracelet<span class="tipo">18k beige gold</span></p>
+					<span>$</span><p class="precio">7050</p>
+					<p class="stock hide">2</p>
+					<input type="number" name="cantidad" class="cantidad">
+					<button class="add">agregar</button>
+				</div>
+				<div class="product">
+					<img src="products/j.jpg" class="imgProd">
+					<p class="descripcion" data-cod="006">Coco Crush Earrings<span class="tipo">18k white and yellow gold and diamonds</span></p>
+					<span>$</span><p class="precio">6000</p>
+					<p class="stock hide">4</p>
+					<input type="number" name="cantidad" class="cantidad">
+					<button class="add">agregar</button>
+				</div>
+				<div class="product">
+					<img src="products/k.jpg" class="imgProd">
+					<p class="descripcion" data-cod="007">Coco Crush Earrings<span class="tipo">18k white gold and diamonds</span></p>
+					<span>$</span><p class="precio">5200</p>
+					<p class="stock hide">4</p>
+					<input type="number" name="cantidad" class="cantidad">
+					<button class="add">agregar</button>
+				</div>
+				<div class="product">
+					<img src="products/a.jpg" class="imgProd">
+					<p class="descripcion" data-cod="008">Coco Crush Ring<span class="tipo">18k white gold, all diamond pave</span></p>	
+					<span>$</span><p class="precio">11350</p>
+					<p class="stock hide">6</p>
+					<input type="number" name="cantidad" class="cantidad">
+					<button class="add">agregar</button>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<a href="">faq</a>
+			<a href="">contact us</a>
+			<a href="">careers</a>
+			<a href="">legal</a>
+			<a href="">statement</a>
+			<a href="">privacy policy</a>
+			<a href="">store locator</a>
+			<a href="">subscribe</a>
+		</footer>
+		<script type="text/javascript" src="js/fontawesome-all.js"></script>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
