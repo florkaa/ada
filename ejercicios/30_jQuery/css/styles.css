@@ -41,7 +41,7 @@ select{
 	margin: 20px;
 }
 img{
-	max-height: 233px;
+	width: 90%;
 	border: 2px #4e9c97 solid;
 	padding: 5px;
 	border-radius: 25px;

@@ -1,4 +1,4 @@
-var flowers = ['Alelí', 'Jazmín', 'Magnolia', 'Peonia'];
+	var flowers = ['Alelí', 'Jazmín', 'Magnolia', 'Peonia'];
 var select = document.getElementById('choices'); 
 select.innerHTML= "";
 
