@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>multa</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h3>Formulario de multas</h3>
+		</header>
+		<form class="formulario">
+			<label>Nombre Completo</label><input type="text" id="name">
+			<label>DNI</label><input type="text" id="dni" maxlength="8">
+			<label>Patente</label><input type="text" id="patente" maxlength="8">
+			<button id="submit">Enviar</button>
+			<p class="obligatorio"><span class="symbol">&#120325;</span> Todos los campos son requeridos.</p>
+			<p class="enviado"><span class="symbol">&check;</span> La información fue enviada correctamente.</p>
+		</form>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/auto.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	font-family: 'Lora', serif;
+}
+#container{
+	margin: 0 auto;
+}
+header{
+	background-color: #c100004f;
+}
+h3{
+	padding: 20px 0;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 2em;
+}
+.formulario{
+	width: 31%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+label{
+	font-size: 1.2em;
+}
+input{
+	display: block;
+	margin: 10px 0 20px 0;
+	width: 100%;
+    line-height: 20px;
+    padding: 0 5px;
+}
+#submit{
+	padding: 5px 20px;
+    background: black;
+    color: white;
+    font-size: 0.8em;
+    border: none;
+}
+.obligatorio, .enviado{
+	margin-top: 20px;
+	padding: 10px;
+    background: #ff00003d;
+    color: red;
+    display: flex;
+    align-items: center;
+	display: none;
+}
+.enviado{
+	background-color: #59ce5933;
+    color: green;
+}
+.symbol{
+	margin-right: 10px;
+}
