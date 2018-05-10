@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	font-family: 'Helvetica', sans-serif;
+}
+
+#container{
+	width: 70%;
+	margin: auto;
+	padding: 20px;
+	background-color: #fff;
+}
+
+.title{
+	width: 80%;
+	margin: auto;
+}
+
+h1{
+	font-style: oblique;
+}
+
+.commentBox{
+	width: 80%;
+    margin: auto;
+}
+
+.eachComment{
+	-webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.05);
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+	width: 10%;
+}
+.left img{
+	width: 100%; 
+}
+
+.right{
+	width: 88%;
+}
+
+.name{
+    font-weight: 800;
+    display: inline-block;
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: #3d71c3;
+}
+
+.mail{
+	text-decoration: none;
+	text-transform: lowercase;
+	color:#6b8bbf;
+}
+
+.comment{
+	margin-top:10px;
+	text-align: justify;
+}
