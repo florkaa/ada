@@ -59,7 +59,7 @@ header, footer{
 	margin: 30px 0 10px 0;
 }
 .product img{
-	max-width: 200px;
+	max-width: 65%;
 }
 .descripcion{
 	font-weight: bold;
@@ -91,7 +91,6 @@ footer{
 }
 footer a{
 	font-size: 1.2em;
-	display: inline-block;
 	margin: 0 20px;
 	text-decoration: none;
 	color: #757474;
@@ -119,7 +118,7 @@ footer a{
     padding: 10px 0px;
 }
 .titles p, .prodElegido p, .prodElegido a{
-	width: 130px;
+	width: 20%;
 	text-align: center;
 	color: #000;
 }
@@ -134,7 +133,7 @@ footer a{
 	width: 100%;
 }
 .prodElegido img{
-	width: 130px;
+	width: 20%;
 }
 .total{
 	max-height: 200px;
@@ -168,3 +167,47 @@ footer a{
 .hide{
 	display: none;
 }
+
+@media all and (max-width: 900px){
+	.product{
+		width: 33%;
+	}
+	footer a{
+		font-size: 1em;
+	}
+	.total{
+		width: 26%;
+	}
+}
+@media all and (max-width: 650px){
+	.product{
+		width: 50%;
+	}
+	.carrito{
+		flex-flow: column;
+		align-items: center;
+	}
+	.compra{
+		width: 100%;
+	}
+	.total{
+		width: 50%;
+		margin: 20px 0px;
+	}
+	footer{
+		flex-direction: column;
+		padding: 20px 0;
+	}
+}
+@media all and (max-width: 450px){
+	.product{
+		width: 100%;
+	}
+	.total{
+		width: 90%;
+	}
+}
+
+
+
+
