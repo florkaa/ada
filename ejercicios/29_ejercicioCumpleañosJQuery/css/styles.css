@@ -48,19 +48,20 @@ button{
 }
 section{
 	display: flex;
-	flex-wrap: wrap;
+	flex-flow: row wrap;
+	justify-content: center;
 	margin: auto;
 	width: 90%;
 }
 figure {
-	width: 200px;
+	width: 16%;
 	margin: 20px;
 	padding: 10px;
 	background-color: #fdfcff;
 	border: 1px #efeaea dotted;
 }
 img{
-	width: 180px;
+	width: 100%;
 	margin-top: 20px;
 }
 figure:hover{
@@ -112,4 +113,40 @@ h2{
 }
 .borrar:hover{
 	transform: scale(1.2);
+}
+
+@media all and (max-width: 950px){
+	section{
+		width: 100%;
+	}
+	figure{
+		width: 20%;
+		margin: 10px;
+	}
+}
+@media all and (max-width: 850px){
+	.top{
+		height: auto;
+		flex-flow: column nowrap;
+		justify-content: center;
+	}
+}
+
+@media all and (max-width: 500px){
+	form{
+		padding: 10px;
+	}
+	input{
+		margin: 5px 0;
+		width: 100%;
+	}
+	button{
+		float: right;
+	}
+	figure{
+		width: 45%;
+	}
+	#cumple-hoy {
+    	width: 90%;
+	}
 }
