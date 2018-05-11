@@ -16,13 +16,30 @@
 			<label>Nombre Completo</label><input type="text" id="name">
 			<label>DNI</label><input type="text" id="dni" maxlength="8">
 			<label>Patente</label><input type="text" id="patente" maxlength="8">
+			<label>Marca</label><input type="text" id="marca">
+			<label>Modelo</label><input type="text" id="modelo">
+			<label>Color</label><input type="text" id="color">
+			<label>Tipo de vehículo</label>
+			<select name="tipo" id="tipo">
+				<option value="-1">seleccione una opción</option>
+				<option value="1">Auto</option>
+				<option value="2">Camión</option>
+			</select><br>
+			<label class="hide">Número de ejes</label>
+			<input type="number" class="hide inline" id="ejes"><br>
+			<label class="hide">Tara</label>
+			<input type="number" class="hide inline" id="tara"><span class='hide'>kg.</span>
+			<label class="puertas">Cantidad de puertas</label>
+			<input type="number" class="puertas inline" id="puertas">
 			<button id="submit">Enviar</button>
 			<p class="obligatorio"><span class="symbol">&#120325;</span> Todos los campos son requeridos.</p>
 			<p class="enviado"><span class="symbol">&check;</span> La información fue enviada correctamente.</p>
 		</form>
 	</div>
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/vehiculo.js"></script>
 	<script type="text/javascript" src="js/auto.js"></script>
+	<script type="text/javascript" src="js/camion.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

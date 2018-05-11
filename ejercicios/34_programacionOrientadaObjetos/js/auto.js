@@ -1,32 +1,18 @@
-class Auto {
+class Auto extends Vehiculo {
   //mi constructor
-    constructor(name="", dni="", patente = "") {
-        this._name = name;
-        this._dni = dni;
-        this._patente = patente;
+    constructor(name, dni, patente, marca, modelo, color, puertas) {
+        super(name, dni, patente, marca, modelo, color);
+        this._puertas = puertas;
     }
 
-    set name(value) {
-        this.name = value;
+    set puertas(value) {  // poder modificar los datos
+        this._puertas = value;
     }
-    get name() {
-        return this.name;
-    }
-
-    set dni(value) {
-        this.dni = value;
-    }
-    get dni() {
-        return this.dni;
+    get puertas() {    // obtener los datos modificados
+        return this._puertas;
     }
 
-    set patente(value) {
-        this._patente = value;
-    }
-    get patente() {
-        return this._patente;
-    }
-  // getPatente() {
-  //   return this._patente;
-  // }
+    // getPatente() {                 // método para recuperar patente
+    //   return this._patente;
+    // }
 }
