@@ -9,18 +9,18 @@
 <body>
 	<div class="main">
 		<h1>Formulario de inscripción</h1>
-		<form id="form" action="procesar.js" method="post">
+		<form id="register-form" action="" name="registration">
 			<div class="box">
 				<label>Nombre</label>
-				<input type="text" class="large" autocomplete="given-name"> <span class="obli">*</span>
+				<input type="text" name="firstName" class="large" autocomplete="given-name" required pattern="[A-Z][A-Za-z' -]+"> <span class="obli">*</span>
 			</div>
 			<div class="box">
 				<label>Apellido</label>
-				<input type="text" class="large" autocomplete="family-name"> <span class="obli">*</span>
+				<input type="text" name="secondName" class="large" autocomplete="family-name" required pattern="[A-Z][A-Za-z' -]+"> <span class="obli">*</span>
 			</div>
 			<div class="box">
 				<label>Nacionalidad</label>
-				<select id="nacionalidad">
+				<select id="nacionalidad" name="nacionalidad" required>
 					<option value="-1">Seleccione una nacionalidad</option>
 					<option>Argentina</option>
 					<option>Brasil</option>
@@ -35,13 +35,13 @@
 			</div>
 			<div class="box">
 				<label>Tipo de Documento</label>
-				<select id="docType">
+				<select id="docType" name="docType" required>
 					<option>DNI</option>
 					<option>LE</option>
 					<option>CE</option>
 				</select>
 				<label>Nº</label>
-				<input type="text"> <span class="obli">*</span>
+				<input type="text" name="docNum" required> <span class="obli">*</span>
 			</div>
 			<div class="box">
 				<label>Calle</label>
@@ -57,26 +57,37 @@
 			</div>
 			<div class="box">
 				<label>Provincia</label>
-				<select id="state">
+				<select id="elements" name="state" required>
 					<option value="-1">Seleccione una provincia</option>
-					<option>Buenos Aires</option>
-					<option>Santa Fé</option>
+					<option data-val="BsAs">Buenos Aires</option>
+					<option data-val="StaFe">Santa Fé</option>
 					<option>Córdoba</option>
 				</select>
 				<span class="obli">*</span>
 			</div>
 			<div class="box">
 				<label>Ciudad</label>
-				<select id="city">
-					<option></option>
+				<select id="BuenosAires" name="city" required>
+					<option value="-1">Seleccione una ciudad</option>
+					<option >CABA</option>
+					<option>GBA Norte</option>
+					<option>GBA Sur</option>
+					<option>GBA Oeste</option>
+				</select>
+				<select id="SantaFe" name="city" required>
+					<option value="-1">Seleccione una ciudad</option>
+					<option>CABA</option>
+					<option>GBA Norte</option>
+					<option>GBA Sur</option>
+					<option>GBA Oeste</option>
 				</select>
 				<span class="obli">*</span>
 			</div>
 			<div class="box">
 				<label>Género</label>
-				<input type="radio" name="genero" class="gen" value="femenino"> <span>Femenino</span>
-				<input type="radio" name="genero" class="gen" value="masculino"> <span>Masculino</span>
-				<input type="radio" name="genero" class="gen" value="otro"> <span>Otro</span> <span class="obli">*</span>
+				<input type="radio" required name="genero" class="gen" value="femenino"> <span>Femenino</span>
+				<input type="radio" required name="genero" class="gen" value="masculino"> <span>Masculino</span>
+				<input type="radio" required name="genero" class="gen" value="otro"> <span>Otro</span><span class="obli">*</span>
 			</div>
 			<div class="box">
 				<label>Deportes</label>
@@ -92,11 +103,11 @@
 			</div>
 			<div class="box">	
 				<label>Teléfono</label>
-				<input type="text" class="large"> <span class="obli">*</span>
+				<input type="text" class="large" required> <span class="obli">*</span>
 			</div>
 			<div class="box">
 				<label>E-mail</label>
-				<input type="text" class="large" autocomplete="email"> <span class="obli">*</span>
+				<input type="text" id="email" class="large" required> <span class="obli">*</span>
 			</div>
 			<div class="box">
 				<label>Obsevaciones</label>
@@ -104,11 +115,14 @@
 			</div>
 			<div class="box right">
 				<p class="obli"> * campos obligatorios.</p><br>
-				<input type="button" id="send" value="Enviar">
+				<input type="submit" id="submit-button" value="Enviar">
 				<input type="button" id="clean" value="Limpiar">
 			</div>
+			
 		</form>
 	</div>
+	<script type="text/javascript" href="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" href="js/jquery.validate.min.js"></script>
 	<script type="text/javascript" href="js/index.js"></script>
 </body>
 </html>

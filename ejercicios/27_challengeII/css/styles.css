@@ -19,7 +19,10 @@ h1{
 	background-color: #fff;
 	padding: 20px 30px;
 }
-
+#register-form{
+	width: 80%;
+	margin: auto;
+}
 .box{
 	margin: 20px 0;
 }
@@ -69,5 +72,5 @@ span{
 	font-weight: 600;
 }
 .obli{
-	color: #000;
+	color: red;
 }
