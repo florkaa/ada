@@ -16,14 +16,6 @@
 			<p>&#9790; Forma todos los pares que puedas en la menor cantidad de intentos.</p>
 			<p id="nombre"></p>
 			<p>&#9734; Intentos: <span class="tries"></span></p>
-			<div class="lose hide">
-				<p>¡Perdiste!</p>
-				<button class="restart">Volver a intentar</button>
-			</div>
-			<div class="won hide">
-				<p>¡Ganaste!</p>
-				<button class="restart">Volver a jugar</button>
-			</div>
 		</section>
 		<section class="game">
 			<div class="ficha"><img src="img/card.png" data-turn="" id="one"></div>
@@ -40,7 +32,20 @@
 			<div class="ficha"><img src="img/card.png" data-turn="" id="twelve"></div>
 		</section>
 	</section>
+	<section class="status">
+		<div class="lose hide">
+			<div id="dialogLose" title="¡Perdiste!">
+			 	<button class="restart">volver a intentar</button>
+			</div>
+		</div>
+		<div class="won hide">
+			<div id="dialogWon" title="¡Ganaste!">
+			 	<button class="restart">volver a jugar</button>
+			</div>
+		</div>
+	</section>
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
  	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

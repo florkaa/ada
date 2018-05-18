@@ -14,6 +14,25 @@ body{
     display: flex;
     justify-content: space-around;
 }
+#dialog, .ui-dialog{
+    background-color: white;
+    width: 400px !important;
+    padding: 20px;
+    border: 1px black solid;
+    text-align: center;
+}
+.ui-button{
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+.ui-dialog-titlebar{
+    margin-top: 30px;
+}
+.ui-dialog-content{
+    min-height: auto;
+    text-align: center;
+}
 .instructions{
     width: 25%;
 }
@@ -75,11 +94,25 @@ button{
     padding:3px;
     margin: 5px;
 }
-
 .disabled{
     -webkit-filter: saturate(15%);
     filter: saturate(15%);
 }
+.opacity{
+    opacity: 0.2;
+}
 .hide{
     display: none;
 }
+@media all and (max-width: 925px){
+    #main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .instructions{
+        width: 90%;
+    }
+    .game {
+        width: 90%;
+        margin-top: 20px;
+    }

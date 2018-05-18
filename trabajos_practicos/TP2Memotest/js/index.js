@@ -36,6 +36,7 @@ var tile = {
 };
 
 $("img").on("click", function() {
+    $(this).effect( "slide", "fast" );
     if(cont < 2 && tile.id != $(this)[0].id && !$(this).hasClass("disabled")){
         $(this).attr("src", $(this).data("turn")); 
         if(tile.data == "") {
@@ -73,9 +74,14 @@ $("img").on("click", function() {
     }
     if(tries < 24 && pairs == 6) {
         $(".won").removeClass("hide");
+        $('img').unbind("click");
+        $( "#dialogWon" ).dialog();
+        $('#main').addClass('opacity');
     }else if(tries == 24) {
         $(".lose").removeClass("hide");
         $('img').unbind("click");
+        $( "#dialogLose" ).dialog();
+        $('#main').addClass('opacity');
     }
 });
 
