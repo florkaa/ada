@@ -2,38 +2,45 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>memotest</title>
+	<title>Memotest</title>
 	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Open+Sans:400,800" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<div id="main">
-		<div class="instructions">
+	<section id="main">
+		<section class="instructions">
 			<h1>Memotest</h1>
-			<p class="title">Instrucciones</p><span>:</span>
-			<p>Haz click en una ficha.</p>
-			<p>Busca su compañera.</p>
-			<p>Forma todos los pares que puedas en la menor cantidad de pasos.</p>
+			<p><span>&#9734; </span> <span class="title">Instrucciones:</span></p>
+			<p>&#9790; Haz click en una ficha.</p>
+			<p>&#9790; Busca su compañera.</p>
+			<p>&#9790; Forma todos los pares que puedas en la menor cantidad de intentos.</p>
 			<p id="nombre"></p>
-		</div>
-		<div id="game">
-			<img src="img/adafront.png" class="ada-front">
-			<img src="img/adafront.png" class="ada-front">
-			<img src="img/adafront.png" class="ada-front">
-			<img src="img/adafront.png" class="ada-front">
-			<img src="img/adafront.png" class="ada-front">
-			<img src="img/adafront.png" class="ada-front">
-			<img src="img/adafront.png" class="ada-front">
-			<img src="img/adafront.png" class="ada-front">
-			<img src="img/adafront.png" class="ada-front">
-			<img src="img/adafront.png" class="ada-front">
-			<img src="img/adafront.png" class="ada-front">
-			<img src="img/adafront.png" class="ada-front">
-		</div>
-	</div>
-	
+			<p>&#9734; Intentos: <span class="tries"></span></p>
+			<div class="lose hide">
+				<p>¡Perdiste!</p>
+				<button class="restart">Volver a intentar</button>
+			</div>
+			<div class="won hide">
+				<p>¡Ganaste!</p>
+				<button class="restart">Volver a jugar</button>
+			</div>
+		</section>
+		<section class="game">
+			<div class="ficha"><img src="img/card.png" data-turn="" id="one"></div>
+			<div class="ficha"><img src="img/card.png" data-turn="" id="two"></div>
+			<div class="ficha"><img src="img/card.png" data-turn="" id="three"></div>	
+			<div class="ficha"><img src="img/card.png" data-turn="" id="four"></div>
+			<div class="ficha"><img src="img/card.png" data-turn="" id="five"></div>
+			<div class="ficha"><img src="img/card.png" data-turn="" id="six"></div>
+			<div class="ficha"><img src="img/card.png" data-turn="" id="seven"></div>
+			<div class="ficha"><img src="img/card.png" data-turn="" id="eight"></div>
+			<div class="ficha"><img src="img/card.png" data-turn="" id="nine"></div>
+			<div class="ficha"><img src="img/card.png" data-turn="" id="ten"></div>
+			<div class="ficha"><img src="img/card.png" data-turn="" id="eleven"></div>
+			<div class="ficha"><img src="img/card.png" data-turn="" id="twelve"></div>
+		</section>
+	</section>
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+ 	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
