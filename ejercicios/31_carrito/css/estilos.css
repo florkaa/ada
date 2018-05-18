@@ -136,7 +136,6 @@ footer a{
 	width: 20%;
 }
 .total{
-	max-height: 200px;
 	width: 30%;
 	border: 1px #000 solid;
 	padding: 20px;
@@ -149,8 +148,22 @@ footer a{
 .payment{
 	font-size: 1.3em;
 }
-.subtotal, .envio, .totalFinal{
+.moneda, .subtotal, .descuento, .envio, .totalFinal, #desc{
 	float: right;
+}
+#desc{
+	width: 70px;
+	text-align: right;
+}
+#cuotas{
+	float: right;
+}
+.calcEnvio{
+	display: none;
+}
+.weight, .distance{
+	margin-left: 100px;
+	display: none;
 }
 .fa-paypal, .fa-credit-card{
 	margin: 0 5px;

@@ -25,15 +25,28 @@
 				</article>
 				<article class="total">
 					<div class="sub">
-					<p>Subtotal: <span class="subtotal">$</span></p>
-					<p>Envío: <span class="envio">$</span></p>
-				</div>
+						<p>Subtotal: <span class="subtotal"></span><span class="moneda">$</span></p>
+						<p>Cupón de descuento: <input type="text" id="desc"> </p>
+						<p class="desc">Descuento:<span class="descuento"></span><span class="moneda">-$</span></p>
+
+						<p><span class="calcEnvio">Calcular envío: </span>
+							<span class="weight">Peso:<input type="text" id="peso"><span>kg.</span> </span>
+							<span class="distance">Distancia: <input type="text" id="distancia"><span>km.</span></span>
+						</p>
+						<p>Cuotas: 
+							<select name="cuotas" id="cuotas">
+								<option value="1">1 cuota - sin interés</option>
+								<option value="3">3 cuotas - 10% de interés</option>
+								<option value="6">6 cuotas - 15% de interés</option>
+							</select></p>
+						<p>Envío: <span class="envio"></span><span class="moneda">$</span></p>
+					</div>
 					<p>Total: <span class="totalFinal">$</span></p>
 					<span class="payment">
 						<i class="fab fa-paypal"></i>
 						<i class="fas fa-credit-card"></i>
 					</span>
-					<button class="checkout">finalizar compra</button>
+					<button class="checkout">checkout</button>
 				</article>
 			</section>
 		</div>
@@ -49,6 +62,7 @@
 		</footer>
 		<script type="text/javascript" src="js/fontawesome-all.js"></script>
 		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script> 
+		<script type="text/javascript" src="js/checkout.js"></script>
 		<script type="text/javascript" src="js/carrito.js"></script>
 	</body>
 </html>
