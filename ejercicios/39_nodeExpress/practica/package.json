@@ -1,0 +1,15 @@
+{
+  "name": "39_nodeexpress",
+  "version": "1.0.0",
+  "description": "ejemplo de node con express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Florencia Caputti <florencia.ayc@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
