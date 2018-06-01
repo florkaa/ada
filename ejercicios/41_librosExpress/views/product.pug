@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  div#containerProd
+    img(src='../'+books.img)
+    p.titleProd  #{books.nombre}
+    span.priceProd #{books.precio}
+    p.descrProd #{books.descripcion}
+    button.submit(type='submit') Comprar
+    
