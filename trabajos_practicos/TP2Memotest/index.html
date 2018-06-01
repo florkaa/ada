@@ -7,6 +7,21 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+	<section class="nameAlert">
+		<div id="dialogName" title="¡Decinos tu nombre para comenzar a jugar!">
+			<input type="text" id="name" class="name">
+			<article class="levels">
+				<label for="level">Elegí un nivel:</label>
+				<select name="level" id="level">
+					<option value="easy">Fácil</option>
+					<option value="normal">Intermedio</option>
+					<option value="hard">Experto</option>
+				</select>
+			</article>
+			<button class="start">empezar</button>
+
+		</div>
+	</section>
 	<section id="main">
 		<section class="instructions">
 			<h1>Memotest</h1>
@@ -14,7 +29,8 @@
 			<p>&#9790; Haz click en una ficha.</p>
 			<p>&#9790; Busca su compañera.</p>
 			<p>&#9790; Forma todos los pares que puedas en la menor cantidad de intentos.</p>
-			<p id="nombre"></p>
+			<p id="nombre">¡A disfrutar del juego, <span class="nombre"></span>!</p>
+			<p class="lvl">Estás jugando en nivel: <span class="nivel"></span>.</p>
 			<p>&#9734; Intentos: <span class="tries"></span></p>
 		</section>
 		<section class="game">
@@ -40,6 +56,9 @@
 		</div>
 		<div class="won hide">
 			<div id="dialogWon" title="¡Ganaste!">
+				<p>Muy bien, <span class="nombre"></span>.</p>
+				<p>Superaste el nivel: <span class="nivel"></span>,</p>
+				<p>en <span class="tries"></span> intentos.</p>
 			 	<button class="restart">volver a jugar</button>
 			</div>
 		</div>

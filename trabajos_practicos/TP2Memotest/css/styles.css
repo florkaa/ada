@@ -22,16 +22,21 @@ body{
     text-align: center;
 }
 .ui-button{
-    position: absolute;
-    top: -10px;
-    right: 10px;
+    display: none;
 }
 .ui-dialog-titlebar{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .ui-dialog-content{
     min-height: auto;
     text-align: center;
+}
+.levels, .name{
+    margin-top: 20px;
+}
+#name{
+    width: 170px;
+    padding: 3px;
 }
 .instructions{
     width: 25%;
@@ -62,6 +67,9 @@ p#nombre{
     text-align: center;
     color: #8e0001;
     letter-spacing: 0.05em;
+}
+p.lvl{
+    margin-bottom: 20px;
 }
 .won, .lose{
     margin-top: 20px;
@@ -99,7 +107,7 @@ button{
     filter: saturate(15%);
 }
 .opacity{
-    opacity: 0.2;
+    opacity: 0.1;
 }
 .hide{
     display: none;
@@ -116,3 +124,4 @@ button{
         width: 90%;
         margin-top: 20px;
     }
+
