@@ -13,8 +13,8 @@ app.get('/prueba', function(req, res){
 	res.send('hello world desde /prueba');
 });
 
-app.use('/customer', require('./customer.js')) //primer parámetro: path del módulo, segundo parámetro: módulo que queremos usar
-
+app.use('/customer', require('./customer.js')) //vinculo el primer parámetro (path del módulo) con el segundo (módulo que queremos usar)
+                                               // escribo "./" al principio porque es un módulo propio.
 app.listen(3000); // escucha el puerto.
 
 
