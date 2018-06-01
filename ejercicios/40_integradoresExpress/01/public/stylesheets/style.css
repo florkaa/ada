@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.title{
+	text-align: center;
+}
+.nenas{
+	background-color: #FFA2CEFF;
+	width: 20%;
+	margin: auto;
+	padding: 20px;
+}
+
+.nenes{
+	background-color: #2CB4FFFF;
+	width: 20%;
+	margin: auto;
+	padding: 20px;
+}
