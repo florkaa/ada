@@ -2,10 +2,9 @@ extends layout
 
 block content
   header 
-    nav.links
-      span &gt;
-      a(href='/') Home
-    h1 #{title}
+    img.headerLogo(src=title)
+    a.home(href='/')
+        img.home(src='images/icons/home.png') 
   div#container
     for libro in libros
       .producto

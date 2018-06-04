@@ -68,7 +68,7 @@ var libros  =  [{	url: "/a-series-of-unfortunate-events/",
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.render('list', { title: 'A Series of Unfortunate Events', libros: libros });
+  res.render('list', { title: 'images/logos/asoue-logo.png', libros: libros });
 });
 
 router.get('/:isbn', function(req, res, next){

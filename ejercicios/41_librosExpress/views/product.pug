@@ -1,6 +1,9 @@
 extends layout
 
 block content
+  header.prod
+    a.home.prod(href='/')
+        img.home(src='../images/icons/home.png') 
   div#containerProd
     img(src='../'+books.img)
     p.titleProd  #{books.nombre}

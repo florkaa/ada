@@ -53,7 +53,7 @@ var libros  =  [{	url: "/harry-potter/",
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.render('list', { title: 'Harry Potter', libros: libros });
+  res.render('list', { title: 'images/logos/hp-logo.png', libros: libros });
 });
 
 router.get('/:isbn', function(req, res, next){
