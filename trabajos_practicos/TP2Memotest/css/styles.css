@@ -119,6 +119,17 @@ button{
     flex-flow: column;
     border: 2px #000 solid;
 }
+
+.restartRank{
+    width: 30%;
+    margin: 20px auto;
+    position: absolute;
+    bottom: -50%;
+    left: 35%;
+}
+.table{
+    color: #fff;
+}
 .table, .result{
     display: flex;
     justify-content: space-evenly;
