@@ -5,6 +5,16 @@ var cont = 0;
 var tries = 0;
 var pairs = 0;
 var randomizado = random(tiles);
+var jsonGame;
+var game = [];
+var saved = localStorage.getItem('game');
+$('#dialogrank').hide();
+
+if(saved == null){
+    game = [];
+}else{
+    game = JSON.parse(saved).game;
+}
 
 function welcome(){
     let htmlToAppend;
@@ -54,6 +64,37 @@ var tile = {
                 id: null
 };
 
+function won(){
+    $('.won').removeClass("hide");
+    $('img').unbind("click");
+    $('#dialogWon').dialog();
+    $('#main').addClass('opacity');  
+}
+
+function lose(){
+    $('.lose').removeClass("hide");
+    $('img').unbind("click");
+    $('#dialogLose').dialog();
+    $('#main').addClass('opacity');  
+}
+
+function createJSON(){
+    var data = {
+        name: $('.name').val(),
+        level: $('#level').val(),
+        tries: tries
+    };
+
+    game.push(data);
+
+    jsonGame = {'game': game,
+    'total': game.length,
+    }
+    let string = JSON.stringify(jsonGame);
+
+    localStorage.setItem('game', string);
+}
+
 $("img").on("click", function() {
     $(this).effect( "bounce", "slow" );
     if(cont < 2 && tile.id != $(this)[0].id && !$(this).hasClass("disabled")){
@@ -93,18 +134,21 @@ $("img").on("click", function() {
     let level = $('.nivel').html();
     if(level=="fácil"){
         if(tries < 18 && pairs == 6) {
+            createJSON();
             won();
         }else if(tries == 18) {
             lose();
         }
     }else if(level=="intermedio"){
         if(tries < 12 && pairs == 6) {
+            createJSON();
             won();
         }else if(tries == 12) {
             lose();
         }
     }else if(level=="experto"){
         if(tries < 8 && pairs == 6) {
+            createJSON();
             won();
         }else if(tries == 8) {
             lose();
@@ -112,20 +156,24 @@ $("img").on("click", function() {
     }
 });
 
-function won(){
-    $('.won').removeClass("hide");
-    $('img').unbind("click");
-    $('#dialogWon').dialog();
-    $('#main').addClass('opacity');  
-}
 
-function lose(){
-    $('.lose').removeClass("hide");
-    $('img').unbind("click");
-    $('#dialogLose').dialog();
-    $('#main').addClass('opacity');  
+function cargarResultados(){
+    let cont=1;
+    $.each(game, function(index, elem){
+        let htmlToAppend;
+        htmlToAppend = `<section class="result"><article class="first">`+cont+++`</article>`;
+        htmlToAppend += `<article class="tags"><p>${elem.name}</p></article>`;
+        htmlToAppend += `<article class="tags"><p>${elem.level}</p></article>`;
+        htmlToAppend += `<article class="tags"><p>${elem.tries}</p></article><section>`;
+        $('#dialogrank').append(htmlToAppend);
+    });
 }
 
 $(".restart").on("click", function() {
-  window.location.reload(true);
+    window.location.reload(true);
 });
+$(".ranking").on("click", e=>{
+	cargarResultados(); 
+	$('#dialogrank').show();
+	$('.ui-dialog').addClass('hide');
+})

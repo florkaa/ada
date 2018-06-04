@@ -109,6 +109,37 @@ button{
 .opacity{
     opacity: 0.1;
 }
+#dialogrank{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    background-color: white;
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    border: 2px #000 solid;
+}
+.table, .result{
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    line-height: 50px;
+    background-color: #8e0001;
+}
+.result{
+    background-color: #fff;
+    height: 25px;
+    line-height: 25px;
+}
+.tags, .first{
+    width: 30%;
+    border-left: 1px #000 solid;
+    text-align: center;
+}
+.first{
+    width: 10%;
+    border: none;
+}
 .hide{
     display: none;
 }
