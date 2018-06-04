@@ -8,6 +8,11 @@ var randomizado = random(tiles);
 var jsonGame;
 var game = [];
 var saved = localStorage.getItem('game');
+var tile = {
+                data: "",
+                id: null
+};
+
 $('#dialogrank').hide();
 
 if(saved == null){
@@ -45,7 +50,6 @@ function welcome(){
         $(".nivel").html(htmlToAppend2)
     })
 }
-welcome();
 
 function random(array) {
     for (var i = array.length - 1; i > 0; i--) {
@@ -58,11 +62,6 @@ function random(array) {
 for(var i = 0; i < randomizado.length; i++) {
     $(".ficha").eq(i).children("img").attr("data-turn", randomizado[i]);
 }
-
-var tile = {
-                data: "",
-                id: null
-};
 
 function won(){
     $('.won').removeClass("hide");
@@ -177,3 +176,5 @@ $(".ranking").on("click", e=>{
 	$('.ui-dialog').addClass('hide');
     $('img').unbind("click");
 })
+
+welcome();
