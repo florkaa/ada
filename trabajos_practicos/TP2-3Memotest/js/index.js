@@ -158,10 +158,10 @@ function cargarResultados(){
     let cont=1;
     $.each(game, function(index, elem){
         let htmlToAppend;
-        htmlToAppend = `<section class="result"><article class="first">`+cont+++`</article>`;
-        htmlToAppend += `<article class="tags"><p>${elem.name}</p></article>`;
-        htmlToAppend += `<article class="tags"><p>${elem.level}</p></article>`;
-        htmlToAppend += `<article class="tags"><p>${elem.tries}</p></article><section>`;
+        htmlToAppend = `<section class="result"><p class="first">`+cont+++`</p>`;
+        htmlToAppend += `<p class="tags">${elem.name}</p>`;
+        htmlToAppend += `<p class="tags">${elem.level}</p>`;
+        htmlToAppend += `<p class="tags">${elem.tries}</p><section>`;
         $('#dialogrank').append(htmlToAppend);
     });
 }
