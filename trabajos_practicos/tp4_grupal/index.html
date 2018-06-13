@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>encuesta</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="cargarResultados();">
+	<div class="main">
+		<form method="post">
+			<h1>Encuesta de tecnología</h1>
+			<section>
+				<label for="pais" class="pregunta">Pais de residencia</label>
+				<select name="pais" id="pais">
+					<option value="-1" disabled selected>Elige un país</option>
+				</select>
+			</section>
+			<section class="validar-radio">
+				<label for="lenguaje" class="pregunta">1- Lenguaje de programación preferido</label>
+				<label><input type="radio" name="lenguaje" value="JavaScript">JavaScript</label>
+				<label><input type="radio" name="lenguaje" value="Java">Java</label>
+				<label><input type="radio" name="lenguaje" value="C#">C#</label>
+			</section>
+			<section class="validar-radio">
+				<label for="sistema" class="pregunta">2- Sistema operativo preferido</label>
+				<label><input type="radio" name="sistema" value="Windows">Windows</label>
+				<label><input type="radio" name="sistema" value="Linux">Linux</label>
+				<label><input type="radio" name="sistema" value="Solaris">Solaris</label>
+			</section>
+			<section class="validar-radio">
+				<label for="editor" class="pregunta">3- Editor de texto favorito</label>
+				<label><input type="radio" name="editor" value="Sublime Text">Sublime Text</label>
+				<label><input type="radio" name="editor" value="Atom">Atom</label>
+				<label><input type="radio" name="editor" value="Visual Studio">Visual Studio</label>
+			</section>
+			<section class="validar-radio">
+				<label for="antiguedad" class="pregunta">4- Hace cuánto programas</label>
+				<label><input type="radio" name="antiguedad" value="1-3 años">1-3 años</label>
+				<label><input type="radio" name="antiguedad" value="3-6 años">3-6 años</label>
+				<label><input type="radio" name="antiguedad" value="+6 años">+6 años</label>
+			</section>
+			<button type="submit" id="send">Enviar</button>
+			<label id="alert"></label>
+			<label id="info-send"></label>
+		</form>
+		<div class="clear"></div>
+		<div class="resultados">
+			<p>Resultados parciales</p>
+			<section class="top">
+				<label class="option first long">
+					<p>País de residencia</p>
+				</label>
+				<label class="option">
+					<p>Lenguaje</p>
+				</label>
+				<label class="option long">
+					<p>Sistema Operativo</p>
+				</label>
+				<label class="option mobile">
+					<p>Editor de texto</p>
+				</label>
+				<label class="option">
+					<p>Antigüedad</p>
+				</label>
+			</section>
+			<section id="result">
+				
+			</section>
+			<section id="none">
+			</section>
+		</div>
+		<div class="charts">
+			<canvas id="oilChart"></canvas>
+			<canvas id="lenguajeChart"></canvas>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/Chart.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
