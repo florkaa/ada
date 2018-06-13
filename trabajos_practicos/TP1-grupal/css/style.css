@@ -1,0 +1,370 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	font-family: "Slabo 27px", serif;
+}
+
+@font-face {
+	font-family: "Partizano";
+	src: url("../img/Partizano-Demo-FFP.ttf");
+}
+body {
+	width: 100%;
+	margin: auto;
+}
+
+header,
+footer {
+	background-color: #e7f0f6;
+}
+
+header,
+.title,
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 60px;
+}
+
+nav a {
+	padding-left: 20px;
+	font-weight: 900;
+	font-size: 20px;
+	color: #000;
+}
+
+nav a:hover,
+footer a:hover {
+	color: #536dfe;
+	text-decoration: none;
+}
+
+.carousel {
+	margin: 40px 0px;
+}
+.carousel-indicators li {
+	border: 1px solid #e7f0f6;
+}
+.carousel-indicators .active {
+	background-color: #e7f0f6;
+}
+.carousel-indicators {
+	bottom: 0;
+	margin-bottom: 0;
+}
+.ancho img {
+	margin: auto;
+}
+
+.title .redes,
+.title figure {
+	width: 25%;
+}
+
+.title {
+	background-color: #f1f1f1;
+	margin: 20px 0px;
+}
+
+.title .bio {
+	width: 50%;
+}
+
+h1 {
+	color: #81d4fa;
+	margin-top: 10px;
+}
+
+.redes {
+	text-align: right;
+}
+
+.redes a {
+	font-size: 2em;
+	padding: 0px 10px;
+	display: inline-block;
+	color: #81d4fa;
+}
+
+.redes a:hover {
+	color: #536dfe;
+}
+
+.perfiles {
+	display: flex;
+	justify-content: space-between;
+	margin: 30px auto;
+	width: 80%;
+}
+
+.perfiles a {
+	text-decoration: none;
+	text-align: center;
+	justify-content: space-around;
+}
+
+.box-perfil {
+	width: 30%;
+	display: flex;
+}
+
+.box-perfil:hover {
+	-webkit-filter: brightness(50%);
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.perfiles img {
+	border-radius: 50%;
+	padding: 3px;
+}
+
+figure {
+	width: auto;
+	height: auto;
+}
+
+figure .foto-perfil {
+	width: 160px;
+}
+
+.box-perfil div {
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+}
+
+.box-perfil div {
+	color: #71c6ed;
+}
+
+footer {
+	width: 100%;
+}
+
+footer a {
+	color: #000;
+}
+
+.correo {
+	margin-right: 15px;
+}
+
+.redes-footer a {
+	color: #000;
+	font-size: 2em;
+	padding: 0px 10px;
+}
+
+#mobile {
+	display: none;
+}
+
+.dropdownMobile {
+	color: #000;
+	position: relative;
+	padding: 5px 0px;
+}
+
+.dropdownMobile .fa-bars {
+	font-size: 30px;
+}
+
+.dropdown-contentMobile {
+	width: 275px;
+	display: none;
+	position: absolute;
+	right: 0px;
+	background-color: #fff;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+	z-index: 1;
+	text-align: center;
+}
+
+.dropdownMobile:hover .dropdown-contentMobile {
+	display: block;
+}
+
+.dropdown-contentMobile a {
+	display: block;
+	color: #000;
+	padding: 5px 0px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.dropdown-contentMobile a:hover {
+	color: #81d4fa;
+}
+
+/*QUIENES SOMOS*/
+
+.titulo {
+	width: 100%;
+	margin: 30px auto 0;
+	text-align: center;
+}
+
+section.nosotras {
+	width: 60%;
+	margin: 30px auto;
+}
+
+article.caja {
+	display: flex;
+	justify-content: center;
+	margin: 30px 0;
+}
+
+figure.us {
+	width: 25%;
+}
+
+figure.us img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+.info {
+	width: 60%;
+	display: flex;
+	margin-left: 25px;
+	flex-flow: column wrap;
+	justify-content: center;
+}
+
+.info h3,
+.info h4 {
+	margin: 0px;
+}
+
+.info p {
+	margin: 10px 0 0 0;
+	text-align: justify;
+}
+
+/*SERVICIOS*/
+
+.servmain {
+	width: 60%;
+	margin: auto;
+	background: white;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: wrap;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	background-color: #e7f0f6;
+	margin: 20px;
+	text-align: center;
+	padding: 25px;
+}
+
+span {
+	font-family: "Partizano";
+	color: #8e8b90;
+	text-align: center;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	border-bottom: 1px #8e8b90 dotted;
+	padding: 0 30px 10px;
+}
+.circle p{
+    margin-top:20px;
+}
+
+/*TABLET*/
+@media (max-width: 1235px) {
+	/*HOME*/
+	.box-perfil {
+		flex-flow: column;
+		align-items: center;
+	}
+	p {
+		margin-bottom: 5px;
+	}
+}
+
+/*MOBILE*/
+@media (max-width: 750px) {
+	/*HOME*/
+	#mobile {
+		display: block;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.title figure,
+	.title .redes {
+		display: none;
+	}
+
+	.title .bio {
+		width: 100%;
+	}
+
+	.box-perfil {
+		width: 200px;
+		height: 200px;
+		padding: 20px;
+		position: relative;
+	}
+
+	figure {
+		width: 100%;
+		height: auto;
+	}
+
+	.perfiles,
+	.box-perfil {
+		flex-flow: column;
+		align-items: center;
+	}
+
+	.perfiles b {
+		display: none;
+	}
+
+	.perfiles p {
+		background-color: #f1f1f1;
+		border-radius: 10%;
+		color: black;
+		position: absolute;
+		padding: 5px 10px;
+		bottom: 4%;
+		left: 50%;
+		transform: translate(-50%, -4%);
+		-ms-transform: translate(-50%, -4%);
+		text-align: center;
+	}
+
+	.redes-footer {
+		margin-top: 20px;
+	}
+
+	footer {
+		display: flex;
+		flex-flow: column;
+	}
+
+	/*QUIENES SOMOS*/
+	.servmain {
+		width: auto;
+	}
+
+	section.nosotras {
+		width: 90%;
+	}
+}
