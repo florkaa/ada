@@ -19,18 +19,18 @@ self.adopciones = function(req, res, next) {
 
   	const limit = 9;
   	const offset = (page - 1) * limit;
-  	let productArr = [];
+  	let nuevoContent = [];
 
 	for (var i = offset; i < offset + limit; i++) {
     	if (content[i]) {
-      		productArr.push(content[i]);
+      		nuevoContent.push(content[i]);
     	}
   	}
-  	if (productArr.length == 0) {
+  	if (nuevoContent.length == 0) {
     	res.render("error");
   	}
 
-  	res.render('adopciones', { title: '¡Adoptá un amigo!', total: Math.ceil(content.length / limit), currentPage: req.params.page, content: productArr, filterSize: filterSize, filterType: filterType});
+  	res.render('adopciones', { title: '¡Adoptá un amigo!', total: Math.ceil(content.length / limit), currentPage: req.params.page, content: nuevoContent, filterSize: filterSize, filterType: filterType});
 }
 
 self.donaciones = function(req, res, next) {
