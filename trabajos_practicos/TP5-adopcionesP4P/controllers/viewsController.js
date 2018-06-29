@@ -27,7 +27,7 @@ self.adopciones = function(req, res, next) {
     	}
   	}
   	if (nuevoContent.length == 0) {
-    	res.render("error");
+    	res.redirect('error')
   	}
 
   	res.render('adopciones', { title: '¡Adoptá un amigo!', total: Math.ceil(content.length / limit), currentPage: req.params.page, content: nuevoContent, filterSize: filterSize, filterType: filterType});
