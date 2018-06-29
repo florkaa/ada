@@ -1,0 +1,177 @@
+ [{
+  "name": "Cosmo",
+  "size": "mediano",
+  "type": "perro",
+  "photo": "images/cosmo.jpg",
+  "info": "Tiene 5 meses y medio, está vacunado y desparasitado. Estimamos será tamaño mediano.",
+  "code": "2n7jvor8"
+}, {
+  "name": "Dayra",
+  "size": "mediano",
+  "type": "perro",
+  "photo": "images/dayra.jpg",
+  "info": "Tiene 2 años y medio, está castrada, tamaño mediano. Se lleva bien con perros y gatos. Muy buena y compañera.",
+  "code": "3rd2zrsm"
+}, {
+  "name": "Dida",
+  "size": "mediano",
+  "type": "perro",
+  "photo": "images/dida.jpg",
+  "info": "Belleza de 2 meses, desparasitada.",
+  "code": "h2dxqqff"
+}, {
+  "name": "Jasper",
+  "size": "mediano",
+  "type": "perro",
+  "photo": "images/jasper.jpg",
+  "info": "Tiene un año y medio, está castrado, vacunado y desparasitado. Es muy enérgico, ama jugar con su pelota. Ideal para casa con parque o para acompañarte a tus actividades deportivas.",
+  "code": "fcfmgok2"
+}, {
+  "name": "Leonardo",
+  "size": "mediano",
+  "type": "perro",
+  "photo": "images/leonardo.jpg",
+  "info": "Cachorrón de un año, castrado, vacunado y desparasitado.",
+  "code": "d8hgakcc"
+}, {
+  "name": "Lihué",
+  "size": "mediano",
+  "type": "perro",
+  "photo": "images/lihue.jpg",
+  "info": "Tiene 6 meses, es mediano, muy amoroso y compañero. Está vacunado y desparasitado.",
+  "code": "d2pkcb34"
+}, {
+  "name": "Lionel",
+  "size": "mediano",
+  "type": "perro",
+  "photo": "images/lionel.jpg",
+  "info": "Tiene 2 meses y está desparasitado",
+  "code": "b35y7wuo"
+}, {
+  "name": "Migue",
+  "size": "mediano",
+  "type": "perro",
+  "photo": "images/migue.jpg",
+  "info": "Tiene un año, y fue abandonado junto con su madre y sus hermanos en la casa donde nació. Está castrado, vacunado y desparasitado, y esperando ser parte de una familia, que le haga conocer lo que es ser feliz.",
+  "code": "ad9sw8dx"
+}, {
+  "name": "Pegaso",
+  "size": "mediano",
+  "type": "perro",
+  "photo": "images/pegaso.jpg",
+  "info": "Tiene 5 meses y medio, está vacunado y desparasitado. Estimamos será tamaño mediano",
+  "code": "aabqm4mw"
+}, {
+  "name": "Ringo",
+  "size": "mediano",
+  "type": "perro",
+  "photo": "images/ringo.jpg",
+  "info": "El compañero perfecto para salir a correr o a caminar, para acompañar a tu novia hasta la parada del colectivo, o simplemente para mirar tu serie preferida, se llama #RINGO. Este cachorrón tiene un año. Está vacunado y desparasitado.",
+  "code": "5nx5u6zz"
+}, {
+  "name": "Roque",
+  "size": "chico",
+  "type": "perro",
+  "photo": "images/roque.jpg",
+  "info": "Tiene 2 años, está castrado. Pesa sólo 8 kilos. Es muy cariñoso y juguetón. Se lleva bien con todo el mundo.",
+  "code": "3u9e4ujw"
+}, {
+  "name": "Tuky",
+  "size": "chico",
+  "type": "perro",
+  "photo": "images/tuky.jpg",
+  "info": "Este bombonazo tiene 4 meses y medio a 5, y estimamos que será tamaño chico a mediano. Ahora pesa unos 7 kilos.",
+  "code": "3sayqh7c"
+}, {
+  "name": "Huesos",
+  "size": "grande",
+  "type": "perro",
+  "photo": "images/huesos.jpg",
+  "info": "#Huesos, era un comunitario que vagaba por las calles. Fue atacado por un Pitbull de un dueño irresponsable, quien le fracturó las dos patas, ambas con fracturas expuestas. Hoy día está recuperado y más feliz que nunca, esperando ser parte de una linda familia.",
+  "code": "3z9g5ujw"
+}, {
+  "name": "Valiente",
+  "size": "mediano",
+  "type": "perro",
+  "photo": "images/valiente.jpg",
+  "info": "#VALIENTE es un barbincho simpaticón con mucho amor para dar. Está castrado, desparasitado y con todas sus vacunas al día.",
+  "code": "6apolk7c"
+}, {
+  "name": "Zara",
+  "size": "mediano",
+  "type": "perro",
+  "photo": "images/zara.jpg",
+  "info": "Tus días pueden convertirse en lo más divertido si a tu vida le sumás la compañía de #ZARA. Ella es jovencita, está castrada, desparasitada y con todas sus vacunas al día.",
+  "code": "6aayqk7c"
+}, {
+  "name": "Vicente",
+  "size": "grande",
+  "type": "perro",
+  "photo": "images/vicente.jpg",
+  "info": "VICENTE perdió la oreja, pero nunca las ganas de jugar 😍 Los gusanos le comieron por completo una oreja, pero ya está recuperado y listo para encontrar una familia que lo haga feliz. ",
+  "code": "poayqk9d"
+}, {
+  "name": "Alma",
+  "size": "chico",
+  "type": "perro",
+  "photo": "images/alma.jpg",
+  "info": "#ALMA tiene un año, está castrada, vacunada y desparasitada. Es muy amorosa y espera pronto ser parte de una familia.",
+  "code": "fsdyqk09"
+}, {
+  "name": "Tita",
+  "size": "grande",
+  "type": "perro",
+  "photo": "images/tita.jpg",
+  "info": "#TITA es una perrita adulta, muy cariñosa y compañera. Está castrada, vacunada y desparasitada. ",
+  "code": "q8adlk4c"
+}, {
+  "name": "Martina",
+  "size": "chico",
+  "type": "gato",
+  "photo": "images/Martina.jpg",
+  "info": "Martina tiene un año, està castrada y es muy sociable con las personas.",
+  "code": "q8adlk4c"
+}, {
+  "name": "Eva",
+  "size": "chico",
+  "type": "gato",
+  "photo": "images/Eva.jpg",
+  "info": "#Eva necesita un adoptante super especial ya que necesita cuidados intensivos durante toda su vida. Ella fue abandonada en zoonosis de merlo con una lesión en la parte baja de la columna, ella camina pero no controla sus esfínteres. Tiene un año y tiene una personalidad única.",
+  "code": "q8adlk4c"
+}, {
+  "name": "Brisa",
+  "size": "chico",
+  "type": "gato",
+  "photo": "images/Brisa.jpg",
+  "info": "Brisa, tiene 3 meses, super mimosa.",
+  "code": "q8adlk4c"
+}, {
+  "name": "Sascha",
+  "size": "chico",
+  "type": "gato",
+  "photo": "images/Sascha.jpg",
+  "info": "SASCHA, hermanito de Anya, tiene entre 3 y 4 meses, esta desparasitado y es un amor ",
+  "code": "q8adlk4c"
+}, {
+  "name": "Luanita",
+  "size": "chico",
+  "type": "gato",
+  "photo": "images/Luanita.jpg",
+  "info": "#LUANITA Tiene 1 año, la devolvieron porque en el edificio cambiaron las reglas y no permitían más animales. Es cariñosa cuando entra en confianza. Muy compañera.",
+  "code": "q8adlk4c"
+}, {
+  "name": "Anya",
+  "size": "chico",
+  "type": "gato",
+  "photo": "images/Anya.jpg",
+  "info": "ANYA tiene entre 3 y 4 meses, esta desparasitada y es un amor.",
+  "code": "q8adlk4c"
+}, {
+  "name": "Zucchini",
+  "size": "chico",
+  "type": "gato",
+  "photo": "images/zucchini.jpg",
+  "info": "",
+  "code": "q8adlk4c"
+}]
+

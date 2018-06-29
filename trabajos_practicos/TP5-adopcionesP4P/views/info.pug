@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  header
+    a(href='/')
+      img(src="../images/logo-web.png")
+    nav
+      a(href='/adopciones') ADOPCIONES
+      a(href='/donaciones') DONACIONES
+      a(href='/favoritos') FAVORITOS
+  .breadcrumb
+  #main
+    section.pets
+      .ficha
+        .foto
+          img(src='../'+pet.photo)
+        .info
+          p Nombre: #{pet.name}
+          p Tamaño: #{pet.size}
+          p #{pet.info}
+  include footer.pug          

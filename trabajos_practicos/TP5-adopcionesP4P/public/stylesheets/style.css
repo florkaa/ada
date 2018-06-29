@@ -1,0 +1,171 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #2d4863;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+a:hover{
+	color: #b4bfff;
+	text-decoration: none;
+}
+header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 20px;
+}
+nav{
+	display: inline-block;
+    text-align: left;
+    margin-top: auto;
+}
+nav a{
+	padding: 0 20px;
+}
+.breadcrumb {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+.breadcrumb a{
+	color: #2e4862;
+}
+#main{
+	width: 100%;
+	background: #f9f9f9;
+	padding: 30px;
+	margin: auto;
+	display: flex;
+	justify-content: flex-start;
+}
+#mainContainer{
+	width: 100%;
+	background: #f9f9f9;
+	padding: 30px 100px;
+	padding-bottom: 40px;
+}
+.search{
+	width: 20%;
+}
+label{
+    margin: 15px 0 5px 0;
+}
+select{
+	display: block;
+	width: 60%;
+}
+#filter{
+	margin-top: 20px;
+}
+.pets, .favs{
+	width: 80%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: auto;
+}
+.each{
+	width: 30%;
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.each a{
+	float: right;
+}
+.each img, .ficha img{
+	width: 100%;
+}
+.each a button, #filter{
+	background-color: #2d4863;
+	border-color: #2d4863;
+	border-radius: 4px;
+	color: #FFF;
+}
+.paginado{
+	display: block;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.pag{
+	background: white;
+    padding: 10px;
+    margin: 0 20px;
+ 	color: #2d4863;
+}
+.ficha{
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+.info{
+	margin-left: 20px;
+}
+p{
+    margin: 10px 0;
+}
+.heart{
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.red{
+	color: #FB0000FF;
+}
+ul{
+	margin-bottom: 20px;
+}
+.donar{
+	background-color: #2d4863;
+	width: 415px;
+	margin: 20px auto;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.favs{
+	width: 70%;
+	margin: auto;
+	display: flex;
+}
+.vacio{
+	width: 100%;
+	text-align: center;
+}
+
+footer {
+	display: flex;
+	width: 30%;
+	margin: auto;
+	justify-content: space-around;
+	font-size: 2.5em;
+	padding: 20px 0;
+}
+
+@media all and (max-width: 700px){
+	.each {
+	    width: 48%;
+	}
+}
+
+
+@media all and (max-width: 550px){
+	.ficha{
+    	display: block;
+    }
+	.each {
+	    width: 100%;
+	}
+}

@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  include header.pug
+  #myCarousel.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='#myCarousel' data-slide-to='0')
+      li(data-target='#myCarousel' data-slide-to='1')
+    .carousel-inner
+      .item.active
+        img(src='images/slide-1.jpg' alt='nati-banner1')
+        .carousel-caption.d-none.d-md-block.slideFirst
+          p 9 DE CADA 10 CACHORROS QUE NACEN NUNCA ENCONTRARÁN UN HOGAR
+      .item
+        img(src='images/slide-2.jpg' alt='nati-banner2')
+        .carousel-caption.d-none.d-md-block.slideSecond
+          p ADOPTÁ Y SALVÁ UNA VIDA
+  include footer.pug
