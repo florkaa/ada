@@ -1,0 +1,50 @@
+extends layout
+
+block content
+  header
+    .registro
+      a(href='/usuario') Mi cuenta/Registrate
+      a(href='/cart')
+        i.fas.fa-shopping-cart
+    img.logo(src='/images/web/logo.png')
+    nav
+      a(href='/') Home
+      a(href='/productos') Productos
+      a(href='/nosotros') Nosotros
+      a(href='/como-comprar') C&oacute;mo comprar
+      a(href='/contacto') Contacto
+  .container
+    .registroUsuario
+      h1.con Registrate
+      form.registrar(method='post')
+        label(for='usuario') Usuario
+        input(type='text' id='user' name='usuario' placeholder='Usuario')
+        label(for='email') E-mail
+        input(type='text' id='email' name='email' placeholder='E-mail')
+        label(for='contrasena') Contraseña
+        input(type='password' id='password' name='contrasena' placeholder='Contraseña')
+        label(for='confContra') Reescribir contraseña
+        input(type='password' id='password2' name='confContra' placeholder='Reescribí tu contraseña')
+        p.errorContra Las contraseñas no coinciden.
+        button.buttonForm#enviarRegistro(type='submit') Enviar
+        button#usuarioExistente ¿Ya estás registrado?
+    
+    .ingresoUsuario
+      h1.con Ingresá a tu cuenta
+      form.acceder(method='post')
+        label(for='usuario') Usuario
+        input(type='text' id='userLogin' name='usuario' placeholder='Usuario')
+        label(for='contrasena') Contraseña
+        input(type='password' id='passLogin' name='contrasena' placeholder='Contraseña')
+        button.buttonForm#login(type='submit') Ingresar
+        button ¿Olvidaste tu contraseña?
+
+
+  footer
+    section.social-media
+      a(href='twitter.com/')
+        i.fab.fa-twitter
+      a(href='instagram.com/')
+        i.fab.fa-instagram
+      a(href='facebook.com/')
+        i.fab.fa-facebook

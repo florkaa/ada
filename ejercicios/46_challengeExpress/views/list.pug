@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 list
+  input#search.form-control(type='text' placeholder='Search..')
+  br
+  ul#userList.list-group
+    each person in content 
+      li.list-group-item #{person.nombre}
+      li.list-group-item #{person.apellido}
+      li.list-group-item #{person.telefono}
+      li.list-group-item #{person.email}

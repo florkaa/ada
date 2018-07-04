@@ -1,0 +1,16 @@
+extends layout
+
+block content
+
+  form.formulario(method='post')
+    h1 Formulario Usuarios 
+    label(for='nombre') Nombre
+    input(type='text' name='nombre' id='name' placeholder='Nombre' maxlength='30')
+    label(for='apellido') Apellido
+    input(type='text' name='apellido' id='lastName' placeholder='Apellido' maxlength='30')
+    label(for='telefono') Teléfono
+    input(type='text' name='telefono' id='phone' minlength='8' maxlength='15' placeholder='Teléfono')
+    label(for='email') E-mail
+    input(type='text' name='email' id='email' placeholder='E-mail')
+    p.none * todos los campos son obligatorios
+    button#send(type='submit') Enviar

@@ -1,0 +1,19 @@
+.containerSkills {
+	position: relative;
+	top: 250px;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+.skills {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.skillsLeft, .skillsRight {
+	width: 48%;
+	text-align: justify;
+	padding: 15px
+}

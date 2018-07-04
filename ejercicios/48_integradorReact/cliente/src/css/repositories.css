@@ -1,0 +1,18 @@
+.repos-list {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.repos-list li:hover {
+  cursor: pointer;
+  color: #10997b;
+}
+
+.repos-link {
+  color: black;
+  text-decoration: none;
+}
+.repos-link:hover {
+  cursor: pointer;
+  color: #10997b;
+}

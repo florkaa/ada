@@ -1,0 +1,57 @@
+body {
+	width: 100%;
+  	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  	background-color: #fafafa;
+  	margin: 0;
+  	box-sizing: border-box;
+}
+a{
+    color: #000;
+    padding: 0 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+header{
+	background-color: #fff;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.icon, .separation{
+	font-size: 30px;
+}
+.separation{
+	margin: 0 30px;
+}
+.logo{
+	margin-top: 10px;
+	width: 100px;
+}
+.right{
+	position: absolute;
+    right: 30px;
+}
+#main{
+	width: 100%;
+	padding: 30px;
+}
+.post{
+	width: 40%;
+	margin: 30px auto;
+	padding: 20px 0;
+	background-color: #fff;
+	border: 1px solid #e6e6e6;
+}
+.post img{
+	width: 100%;
+    margin-top: 20px;
+}
+.post .like{
+	padding: 10px;
+    font-size: 1.5em;
+}
+.like:hover{
+	color: red;
+}

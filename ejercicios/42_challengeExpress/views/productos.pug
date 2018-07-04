@@ -1,0 +1,44 @@
+extends layout
+
+block content
+  header
+    .registro
+      a(href='/usuario') Mi cuenta/Registrate
+      a(href='/cart')
+        i.fas.fa-shopping-cart
+    img.logo(src='/images/web/logo.png')
+    nav
+      a(href='/') Home
+      a(href='/productos') Productos
+      a(href='/nosotros') Nosotros
+      a(href='/como-comprar') C&oacute;mo comprar
+      a(href='/contacto') Contacto
+  div.container.flex
+    .listado
+      .search
+        input.busqueda(type='search' placeholder="qué buscas?")
+        button.busqueda(type='submit' name='search')
+          i.fas.fa-search
+      h2 Categorías
+      each val in categorias
+        label(for=val)= val
+          input(type='checkbox' name="categoria" value=val)
+    .listaProductos
+      for producto in productos
+        .producto.hvr-grow-shadow
+          figure
+            img.imgProd(src='../'+producto.img)
+          a.nombre(href=producto.url+producto.cod) #{producto.nombre}
+          p item #
+            span.codigo #{producto.cod}
+          p.precio #{producto.precio} 
+          button#addCart(type='submit') Añadir 
+             i.fas.fa-cart-plus
+  footer
+    section.social-media
+      a(href='twitter.com/')
+        i.fab.fa-twitter
+      a(href='instagram.com/')
+        i.fab.fa-instagram
+      a(href='facebook.com/')
+        i.fab.fa-facebook

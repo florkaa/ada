@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  header
+    .registro
+      a(href='/usuario') Mi cuenta/Registrate
+      a(href='/cart')
+        i.fas.fa-shopping-cart
+    img.logo(src='/images/web/logo.png')
+    nav
+      a(href='/') Home
+      a(href='/productos') Productos
+      a(href='/nosotros') Nosotros
+      a(href='/como-comprar') C&oacute;mo comprar
+      a(href='/contacto') Contacto
+  .container
+    section.favs
+      h1 Productos destacados
+      for ranProducto in ranProductos
+        .productoDestacado.hvr-grow-shadow
+          figure
+            img(src='../'+ranProducto.img)
+          a(href=ranProducto.url+ranProducto.cod) #{ranProducto.nombre}
+          .bottom
+            p #{ranProducto.precio} 
+            button.submit(type='submit') Añadir 
+              i.fas.fa-shopping-cart      
+      
+  footer
+    section.social-media
+      a(href='twitter.com/')
+        i.fab.fa-twitter
+      a(href='instagram.com/')
+        i.fab.fa-instagram
+      a(href='facebook.com/')
+        i.fab.fa-facebook

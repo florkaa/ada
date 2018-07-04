@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  header
+    .registro
+      a(href='/usuario') Mi cuenta/Registrate
+      a(href='/cart')
+        i.fas.fa-shopping-cart
+    img.logo(src='/images/web/logo.png')
+    nav
+      a(href='/') Home
+      a(href='/productos') Productos
+      a(href='/nosotros') Nosotros
+      a(href='/como-comprar') C&oacute;mo comprar
+      a(href='/contacto') Contacto
+  .container
+    .nosotrosContainer.flex
+      section.sobreNosotros
+        h1 ¿Quiénes somos?
+        p Somos un grupo de coleccionistas y amantes de figuras de todas las épocas, que nos unimos para ayudar a otros a conseguir eso que tanto estaban buscando.
+        h1 ¿Hace cuánto nos dedicamos a esto?
+        p Desde hace 5 años llevamos alegría a los locos apasionados como nosotros.
+      section.photo
+        img(src="/images/web/robot.png")
+  footer
+    section.social-media
+      a(href='twitter.com/')
+        i.fab.fa-twitter
+      a(href='instagram.com/')
+        i.fab.fa-instagram
+      a(href='facebook.com/')
+        i.fab.fa-facebook
+
+

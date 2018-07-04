@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  header
+    .registro
+      a(href='/usuario') Mi cuenta/Registrate
+      a(href='/cart')
+        i.fas.fa-shopping-cart
+    img.logo(src='/images/web/logo.png')
+    nav
+      a(href='/') Home
+      a(href='/productos') Productos
+      a(href='/nosotros') Nosotros
+      a(href='/como-comprar') C&oacute;mo comprar
+      a(href='/contacto') Contacto
+  .container
+    .compra
+      .titulos
+        p Producto
+        p Nombre
+        p Precio
+        p Código
+      .prodCarrito
+
+  footer
+    section.social-media
+      a(href='twitter.com/')
+        i.fab.fa-twitter
+      a(href='instagram.com/')
+        i.fab.fa-instagram
+      a(href='facebook.com/')
+        i.fab.fa-facebook

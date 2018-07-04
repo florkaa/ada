@@ -1,0 +1,22 @@
+.profile{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+  top: 200px;
+  background-color: #fff;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.data{
+  width: 80%
+}
+.social{
+  width: 100%;
+  background-color: #99102e;
+  font-size: 30px;
+}
+.social a{
+  padding: 0 10px;
+}

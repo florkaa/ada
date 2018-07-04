@@ -81,6 +81,14 @@ router.get('/:isbn', function(req, res, next){
   }
 })
 
+router.get('/delete/:isbn', function(req, res, next){
+	let isbn = req.params.isbn;
+	let libro = libros.find(function(libro){ return libro.cod == isbn })
+	console.log(libro)
+	libros.splice(libros.indexOf(libro),1) 
+	res.redirect('/harry-potter');
+})
+
 function search(isbn){
 	for(var i=0; i<libros.length; i++){
 		if(isbn == libros[i].cod){

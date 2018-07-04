@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  header
+    .registro
+      a(href='') Mi cuenta/Registrate
+      a(href='/cart')
+        i.fas.fa-shopping-cart
+    img.logo(src='/images/web/logo.png')
+    nav
+      a(href='/') Home
+      a(href='/productos') Productos
+      a(href='/nosotros') Nosotros
+      a(href='/como-comprar') C&oacute;mo comprar
+      a(href='/contacto') Contacto
+  .container
+    .comoComprar
+      h1 ¿Cómo comprar? 
+      .comprarInfo
+        section.pasosCompra.flex
+          img(src='/images/icons/elijo.png')
+          p Agregá todos los productos que quieras comprar a tu carrito.
+        section.pasosCompra.flex
+          img(src='/images/icons/pago.png')
+          p Pagá con Mercado Pago, así tu compra estará 100% protegida.
+        section.pasosCompra.flex
+          img(src='/images/icons/envio.png')
+          p Lo enviamos lo antes posible.
+        section.pasosCompra.flex
+          img(src='/images/icons/recibo.png')
+          p ¡Recibí tu pedido!
+  footer
+    section.social-media
+      a(href='twitter.com/')
+        i.fab.fa-twitter
+      a(href='instagram.com/')
+        i.fab.fa-instagram
+      a(href='facebook.com/')
+        i.fab.fa-facebook

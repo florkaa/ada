@@ -1,0 +1,35 @@
+*{
+	box-sizing: border-box;
+}
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+.formulario{
+	width: 30%;
+	margin: auto;
+	background-color: #fafafa;
+	padding: 30px;
+}
+label{
+	display: block;
+	margin: 20px 0 10px 0;
+}
+input{
+	width: 100%;
+    padding: 3px;
+}
+button{
+	display: block;
+	width: 100%;
+	margin-top: 20px;
+    padding: 3px 0;
+}
+.none{
+	display: none;
+	color: red;
+}

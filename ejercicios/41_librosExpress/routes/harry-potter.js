@@ -53,7 +53,7 @@ var libros  =  [{	url: "/harry-potter/",
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.render('list', { title: 'images/logos/hp-logo.png', libros: libros });
+	res.render('list', { title: '../images/logos/hp-logo.png', libros: libros });
 });
 
 router.get('/:isbn', function(req, res, next){
@@ -63,7 +63,36 @@ router.get('/:isbn', function(req, res, next){
 	  let books = search(req.params.isbn)
 	  console.log(books)
 	  res.render('product', { books: books });
-  }
+  	}
+})
+
+// router.delete('/:isbn', function(req, res, next) {
+//   const librosFiltered = libros.filter(lib => lib.cod !== req.params.isbn);
+//   res.render('list', { title: 'images/logos/hp-logo.png', libros: librosFiltered });
+// })
+
+router.get('/delete/:isbn', function(req, res, next){
+	let isbn = req.params.isbn;
+	let libro = libros.find(function(libro){ return libro.cod == isbn })
+	console.log(libro)
+	libros.splice(libros.indexOf(libro),1) 
+	res.redirect('/harry-potter');
+	// res.render('list',  { title: '../images/logos/hp-logo.png', libros: libros })
+	// next()
+})
+
+router.post('/add', function(req, res, next){
+	let libro = {};
+
+	libro.nombre = req.body.nombre;
+	libro.cod = req.body.cod;
+	libro.precio = req.body.precio;
+	libro.img = req.body.img;
+	libro.descripcion = req.body.descripcion;
+	libros.push(libro);
+	console.log(libro)
+
+	res.redirect('/harry-potter');
 })
 
 function search(isbn){
@@ -72,7 +101,7 @@ function search(isbn){
 			return libros[i];
 		}
 	}
-	return res.render('error');
+	return null;
 }
 
 module.exports = router;

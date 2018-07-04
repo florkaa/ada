@@ -4,7 +4,7 @@ block content
   header 
     img.headerLogo(src=title)
     a.home(href='/')
-        img.home(src='images/icons/home.png') 
+        img.home(src='../images/icons/home.png') 
   div#container
     for libro in libros
       .producto
@@ -13,3 +13,20 @@ block content
         a(href=libro.url+libro.cod) #{libro.nombre}
         p #{libro.precio}
         button.submit(type='submit') Comprar
+        a.delete(href=libro.url+'delete/'+libro.cod)
+          img.del(src='images/icons/x-button.png')
+        a.edit(href=libro.url+'edit/'+libro.cod)
+          img.ed(src='images/icons/edit.png')
+  form.add(method='POST' action='/harry-potter/add')
+    h2 Agregar otro libro
+    label(for='nombre') Nombre
+    input#nombre(type='text' name='nombre')
+    label(for='cod') Código
+    input#cod(type='text' name='cod')
+    label(for='precio') Precio
+    input#precio(type='text' name='precio')
+    //- label(for='foto') Portada
+    //- input#foto.noB(type='file' name='img')     
+    label(for='descripcion' name='descripcion') Descripción
+    textarea#descripcion
+    button#send(type='submit') Enviar

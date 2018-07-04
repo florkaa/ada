@@ -64,6 +64,7 @@ img.home{
 .producto{
 	width: 20%;
 	margin: 2.5%;
+    position: relative;
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
@@ -74,6 +75,46 @@ figure{
 }
 .producto a, .producto p{
     text-align: center;
+}
+.delete, .del, .edit, .ed{
+    width: 20px;
+    height: 20px;
+    background: none;
+    position: absolute;
+    top: -2%;
+    right: -2%;
+}
+.edit, .ed{
+    top: 5%;
+}
+.delete, .edit{
+    opacity: 0;
+    border: none;
+}
+.delete:hover, .edit:hover{
+    opacity: 1;
+}
+.add{
+    width: 30%;
+    margin: 30px auto ;
+    display: flex;
+    flex-direction: column;
+}
+.add label{
+    margin: 10px 0px;
+}
+.add textarea{
+    height: 70px;
+    margin-bottom: 15px;
+    border: none;
+}
+.add input{
+    height: 25px;
+}
+#send{
+    height: 30px;
+    background-color: #fff;
+    border: 1px #000 solid;
 }
 header.prod{
     height: 70px;

@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  header 
+    i.fab.fa-instagram.icon
+    p.separation |
+    img.logo(src='/resource/logo.png')
+    form#uploadForm.right(ref='uploadForm' action='http://localhost:3000/upload' method='post' enctype='multipart/form-data')
+      input(type='file' name='sampleFile')
+      input(type='submit' value='+')
+  #main
+    each file in filelist
+      .post
+        a(href='/') #{file.user}
+        img(src='images/'+file.name)
+        i.far.fa-heart.like
