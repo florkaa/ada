@@ -14,19 +14,6 @@ class Repositories extends Component {
       .then(function(res) {
         return res.json();
       })
-      /*}
-      .then(function(repos) {
-        console.log(repos);
-        return repos.map(function(repo) {
-          return {
-            name: repo.name,
-            id: repo.id,
-            url: repo.url,
-            description: repo.description
-          };
-        });
-      })
-      */
       .then(repos => this.setState({ repos }));
   }
 
